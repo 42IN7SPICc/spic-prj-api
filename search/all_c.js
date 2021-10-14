@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['radius_71',['Radius',['../classspic_1_1CircleCollider.html#aae4f253513624db15666c868ee3e50bb',1,'spic::CircleCollider::Radius() const'],['../classspic_1_1CircleCollider.html#a054a05ed8fd0b5f7bec554d7c8211890',1,'spic::CircleCollider::Radius(double newRadius)']]],
-  ['red_72',['red',['../classspic_1_1Color.html#aabd56f016cd6801df2cb8a4e8c99be70',1,'spic::Color']]],
-  ['renderscene_73',['RenderScene',['../classspic_1_1Scene.html#af93b0e10186dff5f5701d5c6262e378e',1,'spic::Scene']]],
-  ['rigidbody_74',['RigidBody',['../classspic_1_1RigidBody.html',1,'spic']]]
+  ['play_70',['Play',['../classspic_1_1Animator.html#a1568a4800f79b98bdd8ce3f485810fe2',1,'spic::Animator::Play()'],['../classspic_1_1AudioSource.html#a5b0f771fd18c9fd2dee6c1e5bf187465',1,'spic::AudioSource::Play()']]],
+  ['point_71',['Point',['../structspic_1_1Point.html',1,'spic']]]
 ];

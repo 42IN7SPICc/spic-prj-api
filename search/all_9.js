@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['magenta_51',['magenta',['../classspic_1_1Color.html#ad1de7fbd69c3b7d60c0b6435bcae57ea',1,'spic::Color']]],
-  ['mousebutton_52',['MouseButton',['../namespacespic_1_1Input.html#aedea49171a9999a91014688dd9c29b04',1,'spic::Input']]],
-  ['mouseposition_53',['MousePosition',['../namespacespic_1_1Input.html#a08e769bec4fdee3ded3bc1571330228a',1,'spic::Input']]]
+  ['log_49',['Log',['../namespacespic_1_1Debug.html#afd83a46e9be35c620d08faec43233677',1,'spic::Debug']]],
+  ['logerror_50',['LogError',['../namespacespic_1_1Debug.html#aeb31fabbcf138d4ac2cf5c9efd039d63',1,'spic::Debug']]],
+  ['logwarning_51',['LogWarning',['../namespacespic_1_1Debug.html#acb3619c626a75b02305b1db85b6ffa2c',1,'spic::Debug']]]
 ];
