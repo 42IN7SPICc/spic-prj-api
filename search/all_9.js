@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['log_49',['Log',['../namespacespic_1_1Debug.html#afd83a46e9be35c620d08faec43233677',1,'spic::Debug']]],
-  ['logerror_50',['LogError',['../namespacespic_1_1Debug.html#aeb31fabbcf138d4ac2cf5c9efd039d63',1,'spic::Debug']]],
-  ['logwarning_51',['LogWarning',['../namespacespic_1_1Debug.html#acb3619c626a75b02305b1db85b6ffa2c',1,'spic::Debug']]]
+  ['keycode_49',['KeyCode',['../namespacespic_1_1Input.html#aed95f16c86236940a2ad1d84ef8c25d2',1,'spic::Input']]]
 ];
