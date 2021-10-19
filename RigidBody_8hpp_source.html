@@ -82,19 +82,22 @@ $(function() {
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
 <div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="classspic_1_1RigidBody.html">   21</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classspic_1_1RigidBody.html">RigidBody</a> : <span class="keyword">public</span> <a class="code" href="classspic_1_1Component.html">Component</a> {</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classspic_1_1RigidBody.html#ab97cfa653ee725ea97574dca9469acc1">   28</a></span>&#160;            <span class="keywordtype">void</span> <a class="code" href="classspic_1_1RigidBody.html#ab97cfa653ee725ea97574dca9469acc1">AddForce</a>(<span class="keyword">const</span> <a class="code" href="structspic_1_1Point.html">Point</a>&amp; forceDirection);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            <span class="keywordtype">double</span> mass;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            <span class="keywordtype">double</span> gravityScale;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            BodyType bodyType;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    };</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classspic_1_1RigidBody.html#a1a87e07b6fa8c21cb27be2e15e9c1989">   29</a></span>&#160;            <a class="code" href="classspic_1_1RigidBody.html#a1a87e07b6fa8c21cb27be2e15e9c1989">RigidBody</a>(<span class="keywordtype">double</span> mass, <span class="keywordtype">double</span> gravityScale, <span class="keyword">const</span> BodyType&amp; bodyType);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            </div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classspic_1_1RigidBody.html#ab97cfa653ee725ea97574dca9469acc1">   36</a></span>&#160;            <span class="keywordtype">void</span> <a class="code" href="classspic_1_1RigidBody.html#ab97cfa653ee725ea97574dca9469acc1">AddForce</a>(<span class="keyword">const</span> <a class="code" href="structspic_1_1Point.html">Point</a>&amp; forceDirection);</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// RIGIDBODY_H_</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            <span class="keywordtype">double</span> mass;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            <span class="keywordtype">double</span> gravityScale;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            BodyType bodyType;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    };</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// RIGIDBODY_H_</span></div>
 <div class="ttc" id="aclassspic_1_1Component_html"><div class="ttname"><a href="classspic_1_1Component.html">spic::Component</a></div><div class="ttdoc">Base class for all components.</div><div class="ttdef"><b>Definition:</b> Component.hpp:9</div></div>
 <div class="ttc" id="aclassspic_1_1RigidBody_html"><div class="ttname"><a href="classspic_1_1RigidBody.html">spic::RigidBody</a></div><div class="ttdoc">A component representing a rigid body.</div><div class="ttdef"><b>Definition:</b> RigidBody.hpp:21</div></div>
+<div class="ttc" id="aclassspic_1_1RigidBody_html_a1a87e07b6fa8c21cb27be2e15e9c1989"><div class="ttname"><a href="classspic_1_1RigidBody.html#a1a87e07b6fa8c21cb27be2e15e9c1989">spic::RigidBody::RigidBody</a></div><div class="ttdeci">RigidBody(double mass, double gravityScale, const BodyType &amp;bodyType)</div><div class="ttdoc">Constructor.</div></div>
 <div class="ttc" id="aclassspic_1_1RigidBody_html_ab97cfa653ee725ea97574dca9469acc1"><div class="ttname"><a href="classspic_1_1RigidBody.html#ab97cfa653ee725ea97574dca9469acc1">spic::RigidBody::AddForce</a></div><div class="ttdeci">void AddForce(const Point &amp;forceDirection)</div><div class="ttdoc">Apply force to this rigid body.</div></div>
 <div class="ttc" id="astructspic_1_1Point_html"><div class="ttname"><a href="structspic_1_1Point.html">spic::Point</a></div><div class="ttdoc">Struct representing both a 2D point and a 2D vector.</div><div class="ttdef"><b>Definition:</b> Point.hpp:9</div></div>
 </div><!-- fragment --></div><!-- contents -->

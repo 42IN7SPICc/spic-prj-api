@@ -76,21 +76,28 @@ $(function() {
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span>spic {</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
 <div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="classspic_1_1Sprite.html">   13</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classspic_1_1Sprite.html">Sprite</a> : <span class="keyword">public</span> <a class="code" href="classspic_1_1Component.html">Component</a> {</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;            std::string sprite;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;            <a class="code" href="classspic_1_1Color.html">Color</a> color;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;            <span class="keywordtype">bool</span> flipX;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;            <span class="keywordtype">bool</span> flipY;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;            <span class="keywordtype">int</span> sortingLayer;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            <span class="keywordtype">int</span> orderInLayer;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    };</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;}</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// SPRITERENDERER_H_</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classspic_1_1Sprite.html#af77fcf44d3bc02efbdf1d66b8bd8010c">   23</a></span>&#160;            <a class="code" href="classspic_1_1Sprite.html#af77fcf44d3bc02efbdf1d66b8bd8010c">Sprite</a>(<span class="keyword">const</span> std::string&amp; sprite, <span class="keywordtype">bool</span> flipX, <span class="keywordtype">bool</span> flipY, <span class="keywordtype">int</span> sortingLayer, <span class="keywordtype">int</span> orderLayer);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            </div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classspic_1_1Sprite.html#ade8fcad6447e8c0dff43ddbcc5a7542d">   34</a></span>&#160;            <a class="code" href="classspic_1_1Sprite.html#ade8fcad6447e8c0dff43ddbcc5a7542d">Sprite</a>(<span class="keyword">const</span> std::string&amp; sprite, <span class="keyword">const</span> <a class="code" href="classspic_1_1Color.html">Color</a>&amp; color, <span class="keywordtype">bool</span> flipX, <span class="keywordtype">bool</span> flipY, <span class="keywordtype">int</span> sortingLayer, <span class="keywordtype">int</span> orderInLayer);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            std::string sprite;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            <a class="code" href="classspic_1_1Color.html">Color</a> color;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            <span class="keywordtype">bool</span> flipX;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            <span class="keywordtype">bool</span> flipY;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            <span class="keywordtype">int</span> sortingLayer;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            <span class="keywordtype">int</span> orderInLayer;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    };</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// SPRITERENDERER_H_</span></div>
 <div class="ttc" id="aclassspic_1_1Color_html"><div class="ttname"><a href="classspic_1_1Color.html">spic::Color</a></div><div class="ttdoc">Color represents a red-green-blue color with alpha.</div><div class="ttdef"><b>Definition:</b> Color.hpp:9</div></div>
 <div class="ttc" id="aclassspic_1_1Component_html"><div class="ttname"><a href="classspic_1_1Component.html">spic::Component</a></div><div class="ttdoc">Base class for all components.</div><div class="ttdef"><b>Definition:</b> Component.hpp:9</div></div>
 <div class="ttc" id="aclassspic_1_1Sprite_html"><div class="ttname"><a href="classspic_1_1Sprite.html">spic::Sprite</a></div><div class="ttdoc">A component representing a sprite (small image)</div><div class="ttdef"><b>Definition:</b> Sprite.hpp:13</div></div>
+<div class="ttc" id="aclassspic_1_1Sprite_html_ade8fcad6447e8c0dff43ddbcc5a7542d"><div class="ttname"><a href="classspic_1_1Sprite.html#ade8fcad6447e8c0dff43ddbcc5a7542d">spic::Sprite::Sprite</a></div><div class="ttdeci">Sprite(const std::string &amp;sprite, const Color &amp;color, bool flipX, bool flipY, int sortingLayer, int orderInLayer)</div><div class="ttdoc">Constructor.</div></div>
+<div class="ttc" id="aclassspic_1_1Sprite_html_af77fcf44d3bc02efbdf1d66b8bd8010c"><div class="ttname"><a href="classspic_1_1Sprite.html#af77fcf44d3bc02efbdf1d66b8bd8010c">spic::Sprite::Sprite</a></div><div class="ttdeci">Sprite(const std::string &amp;sprite, bool flipX, bool flipY, int sortingLayer, int orderLayer)</div><div class="ttdoc">Constructor.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

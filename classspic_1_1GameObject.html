@@ -88,9 +88,9 @@ Inheritance diagram for spic::GameObject:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a71182079d8491155d8be10582f147a5a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classspic_1_1GameObject.html#a71182079d8491155d8be10582f147a5a">GameObject</a> (const std::string &amp;name)</td></tr>
-<tr class="memdesc:a71182079d8491155d8be10582f147a5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="classspic_1_1GameObject.html#a71182079d8491155d8be10582f147a5a">More...</a><br /></td></tr>
-<tr class="separator:a71182079d8491155d8be10582f147a5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1acb83976ab18315879330d4ee6bac18"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classspic_1_1GameObject.html#a1acb83976ab18315879330d4ee6bac18">GameObject</a> (const std::string &amp;name, const std::string &amp;tag, int layer)</td></tr>
+<tr class="memdesc:a1acb83976ab18315879330d4ee6bac18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="classspic_1_1GameObject.html#a1acb83976ab18315879330d4ee6bac18">More...</a><br /></td></tr>
+<tr class="separator:a1acb83976ab18315879330d4ee6bac18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acfc329cbe9bb15a94df487c791657417"><td class="memItemLeft" align="right" valign="top"><a id="acfc329cbe9bb15a94df487c791657417"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classspic_1_1GameObject.html#acfc329cbe9bb15a94df487c791657417">operator bool</a> ()</td></tr>
 <tr class="memdesc:acfc329cbe9bb15a94df487c791657417"><td class="mdescLeft">&#160;</td><td class="mdescRight">Does the object exist? TODO wat wordt hiermee bedoeld? <br /></td></tr>
@@ -170,8 +170,8 @@ template&lt;class T &gt; </td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Any object which should be represented on screen. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a71182079d8491155d8be10582f147a5a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a71182079d8491155d8be10582f147a5a">&#9670;&nbsp;</a></span>GameObject()</h2>
+<a id="a1acb83976ab18315879330d4ee6bac18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1acb83976ab18315879330d4ee6bac18">&#9670;&nbsp;</a></span>GameObject()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -180,8 +180,24 @@ template&lt;class T &gt; </td></tr>
           <td class="memname">spic::GameObject::GameObject </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>name</em></td><td>)</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>tag</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>layer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -190,6 +206,8 @@ template&lt;class T &gt; </td></tr>
 <p>The new <a class="el" href="classspic_1_1GameObject.html" title="Any object which should be represented on screen.">GameObject</a> will also be added to a statically available collection, the administration. This makes the <a class="el" href="classspic_1_1GameObject.html#a468250d6be475c50c0a0466dd2740f24" title="Finds a GameObject by name and returns it.">Find()</a>-functions possible. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">name</td><td>The name for the game object. </td></tr>
+    <tr><td class="paramname">tag</td><td>The tag for the game object. </td></tr>
+    <tr><td class="paramname">layer</td><td>The layer for the game object. </td></tr>
   </table>
   </dd>
 </dl>
