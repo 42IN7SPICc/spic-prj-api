@@ -40,6 +40,8 @@ std::vector<std::shared_ptr<spic::GameObject>> spic::GameObject::FindObjectsOfTy
 
 template<class T>
 void spic::GameObject::AddComponent(std::shared_ptr<spic::Component> component) {
+//    component->Parent(this);
+    component->Active(true);
     components.push_back(component);
 }
 
