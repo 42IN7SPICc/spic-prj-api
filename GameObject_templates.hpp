@@ -1,7 +1,7 @@
 #include "GameObject.hpp"
 
 template<class T>
-std::shared_ptr<spic::GameObject> spic::GameObject::FindObjectOfType(bool includeInactive = false) {
+std::shared_ptr<spic::GameObject> spic::GameObject::FindObjectOfType(bool includeInactive) {
     for (std::shared_ptr<spic::GameObject> gameObject: All(includeInactive))
     {
         try
@@ -19,7 +19,7 @@ std::shared_ptr<spic::GameObject> spic::GameObject::FindObjectOfType(bool includ
 }
 
 template<class T>
-std::vector<std::shared_ptr<spic::GameObject>> spic::GameObject::FindObjectsOfType(bool includeInactive = false) {
+std::vector<std::shared_ptr<spic::GameObject>> spic::GameObject::FindObjectsOfType(bool includeInactive) {
     std::vector<std::shared_ptr<T>> typeObjects;
 
     for (std::shared_ptr<spic::GameObject> gameObject: All(includeInactive))
