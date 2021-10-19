@@ -6,7 +6,7 @@ std::shared_ptr<spic::GameObject> spic::GameObject::FindObjectOfType(bool includ
     {
         try
         {
-            auto objectPtr = std::dynamic_pointer_cast<T>(gameObject);
+            auto objectPtr = std::static_pointer_cast<T>(gameObject);
             if (objectPtr) return objectPtr;
         }
         catch (const std::bad_cast&)
@@ -26,7 +26,7 @@ std::vector<std::shared_ptr<spic::GameObject>> spic::GameObject::FindObjectsOfTy
     {
         try
         {
-            auto objectPtr = std::dynamic_pointer_cast<T>(gameObject);
+            auto objectPtr = std::static_pointer_cast<T>(gameObject);
             if (objectPtr) typeObjects.insert(objectPtr);
         }
         catch (const std::bad_cast&)
@@ -49,7 +49,7 @@ std::shared_ptr<spic::Component> spic::GameObject::GetComponent() const {
     {
         try
         {
-            auto componentPtr = std::dynamic_pointer_cast<T>(component);
+            auto componentPtr = std::static_pointer_cast<T>(component);
             if (componentPtr) return componentPtr;
         }
         catch (const std::bad_cast&)
@@ -69,7 +69,7 @@ std::vector<std::shared_ptr<spic::Component>> spic::GameObject::GetComponents() 
     {
         try
         {
-            auto componentPtr = std::dynamic_pointer_cast<T>(component);
+            auto componentPtr = std::static_pointer_cast<T>(component);
             if (componentPtr) typeComponents.push_back(componentPtr);
         }
         catch (const std::bad_cast&)
