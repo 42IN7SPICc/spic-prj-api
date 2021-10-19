@@ -33,3 +33,5 @@
 /html/
 
 .idea/
+
+cmake-build-debug
