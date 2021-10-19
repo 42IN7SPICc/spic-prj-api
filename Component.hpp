@@ -19,6 +19,8 @@ namespace spic {
              */
             void Active(bool flag) { active = flag; }
 
+            virtual ~Component() = 0;
+
         private:
             /**
              * @brief Active status.
