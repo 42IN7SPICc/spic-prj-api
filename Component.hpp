@@ -19,7 +19,7 @@ namespace spic {
              */
             void Active(bool flag) { active = flag; }
 
-            virtual ~Component() = 0;
+            virtual ~Component() = default;
 
         private:
             /**
