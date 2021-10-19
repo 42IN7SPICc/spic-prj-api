@@ -63,14 +63,14 @@ std::shared_ptr<spic::Component> spic::GameObject::GetComponent() const {
 
 template<class T>
 std::vector<std::shared_ptr<spic::Component>> spic::GameObject::GetComponents() const {
-    std::vector<std::shared_ptr<T>> typeComponents;
+    std::vector<std::shared_ptr<spic::Component>> typeComponents;
 
     for (std::shared_ptr<spic::Component> component: components)
     {
         try
         {
             auto componentPtr = std::dynamic_pointer_cast<T>(component);
-            if (componentPtr) typeComponents.insert(componentPtr);
+            if (componentPtr) typeComponents.push_back(componentPtr);
         }
         catch (const std::bad_cast&)
         {
@@ -98,7 +98,7 @@ std::shared_ptr<spic::Component> spic::GameObject::GetComponentInParent() const 
 
 template<class T>
 std::vector<std::shared_ptr<spic::Component>> spic::GameObject::GetComponentsInChildren() const {
-    std::vector<std::shared_ptr<T>> childComponents;
+    std::vector<std::shared_ptr<spic::Component>> childComponents;
 
     for (const std::shared_ptr<spic::GameObject>& child: children)
     {
