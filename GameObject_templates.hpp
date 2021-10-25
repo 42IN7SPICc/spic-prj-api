@@ -43,7 +43,7 @@ std::shared_ptr<T> spic::GameObject::GetComponent() const {
 
 template<class T>
 std::vector<std::shared_ptr<T>> spic::GameObject::GetComponents() const {
-    std::vector<std::shared_ptr<spic::Component>> typeComponents;
+    std::vector<std::shared_ptr<T>> typeComponents;
 
     for (std::shared_ptr<spic::Component> component: components)
     {
@@ -71,7 +71,7 @@ std::shared_ptr<T> spic::GameObject::GetComponentInParent() const {
 
 template<class T>
 std::vector<std::shared_ptr<T>> spic::GameObject::GetComponentsInChildren() const {
-    std::vector<std::shared_ptr<spic::Component>> childComponents;
+    std::vector<std::shared_ptr<T>> childComponents;
 
     for (const std::shared_ptr<spic::GameObject>& child: children)
     {
