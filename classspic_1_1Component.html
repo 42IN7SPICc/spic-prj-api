@@ -94,6 +94,12 @@ Public Member Functions</h2></td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classspic_1_1Component.html#a3804f5e3cac204184980b7e34e991033">Active</a> (bool flag)</td></tr>
 <tr class="memdesc:a3804f5e3cac204184980b7e34e991033"><td class="mdescLeft">&#160;</td><td class="mdescRight">flag New active status. <br /></td></tr>
 <tr class="separator:a3804f5e3cac204184980b7e34e991033"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ada1518fb3c752d78f45466ddc3e6e8"><td class="memItemLeft" align="right" valign="top">std::weak_ptr&lt; <a class="el" href="classspic_1_1GameObject.html">spic::GameObject</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classspic_1_1Component.html#a7ada1518fb3c752d78f45466ddc3e6e8">GameObject</a> () const</td></tr>
+<tr class="memdesc:a7ada1518fb3c752d78f45466ddc3e6e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The parent of this component.  <a href="classspic_1_1Component.html#a7ada1518fb3c752d78f45466ddc3e6e8">More...</a><br /></td></tr>
+<tr class="separator:a7ada1518fb3c752d78f45466ddc3e6e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7597be304d70a2711f540b472f2b5084"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classspic_1_1Component.html#a7597be304d70a2711f540b472f2b5084">GameObject</a> (std::weak_ptr&lt; <a class="el" href="classspic_1_1GameObject.html">spic::GameObject</a> &gt; gameObject)</td></tr>
+<tr class="memdesc:a7597be304d70a2711f540b472f2b5084"><td class="mdescLeft">&#160;</td><td class="mdescRight">The parent of this component.  <a href="classspic_1_1Component.html#a7597be304d70a2711f540b472f2b5084">More...</a><br /></td></tr>
+<tr class="separator:a7597be304d70a2711f540b472f2b5084"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base class for all components. </p>
@@ -123,6 +129,73 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 <p>Getter for active status. </p>
 <dl class="section return"><dt>Returns</dt><dd>true if active, false otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="a7ada1518fb3c752d78f45466ddc3e6e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ada1518fb3c752d78f45466ddc3e6e8">&#9670;&nbsp;</a></span>GameObject() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::weak_ptr&lt;<a class="el" href="classspic_1_1GameObject.html">spic::GameObject</a>&gt; spic::Component::GameObject </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The parent of this component. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td>the current parent </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7597be304d70a2711f540b472f2b5084"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7597be304d70a2711f540b472f2b5084">&#9670;&nbsp;</a></span>GameObject() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spic::Component::GameObject </td>
+          <td>(</td>
+          <td class="paramtype">std::weak_ptr&lt; <a class="el" href="classspic_1_1GameObject.html">spic::GameObject</a> &gt;&#160;</td>
+          <td class="paramname"><em>gameObject</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The parent of this component. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td>the new parent </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
