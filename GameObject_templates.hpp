@@ -26,7 +26,6 @@ std::vector<std::shared_ptr<T>> spic::GameObject::FindObjectsOfType(bool include
 
 template<class T>
 void spic::GameObject::AddComponent(std::shared_ptr<T> component) {
-//    component->Parent(this);
     component->Active(true);
     components.push_back(component);
 }
@@ -67,7 +66,7 @@ std::shared_ptr<T> spic::GameObject::GetComponentInChildren() const {
 
 template<class T>
 std::shared_ptr<T> spic::GameObject::GetComponentInParent() const {
-    return parent ? parent->GetComponent<T>() : std::shared_ptr<T>{};
+    return !parent.expired() ? parent.lock()->GetComponent<T>() : std::shared_ptr<T>{};
 }
 
 template<class T>
@@ -88,5 +87,5 @@ std::vector<std::shared_ptr<T>> spic::GameObject::GetComponentsInChildren() cons
 
 template<class T>
 std::vector<std::shared_ptr<T>> spic::GameObject::GetComponentsInParent() const {
-    return parent ? parent->GetComponents<T>() : std::vector<std::shared_ptr<T>>{};
+    return !parent.expired() ? parent.lock()->GetComponents<T>() : std::vector<std::shared_ptr<T>>{};
 }
