@@ -1,7 +1,7 @@
 #include "GameObject.hpp"
 
 template<class T>
-std::shared_ptr<spic::GameObject> spic::GameObject::FindObjectOfType(bool includeInactive) {
+std::shared_ptr<T> spic::GameObject::FindObjectOfType(bool includeInactive) {
     for (std::shared_ptr<spic::GameObject> gameObject: All(includeInactive))
     {
         auto objectPtr = std::dynamic_pointer_cast<T>(gameObject);
@@ -12,7 +12,7 @@ std::shared_ptr<spic::GameObject> spic::GameObject::FindObjectOfType(bool includ
 }
 
 template<class T>
-std::vector<std::shared_ptr<spic::GameObject>> spic::GameObject::FindObjectsOfType(bool includeInactive) {
+std::vector<std::shared_ptr<T>> spic::GameObject::FindObjectsOfType(bool includeInactive) {
     std::vector<std::shared_ptr<T>> typeObjects;
 
     for (std::shared_ptr<spic::GameObject> gameObject: All(includeInactive))
@@ -25,14 +25,14 @@ std::vector<std::shared_ptr<spic::GameObject>> spic::GameObject::FindObjectsOfTy
 }
 
 template<class T>
-void spic::GameObject::AddComponent(std::shared_ptr<spic::Component> component) {
+void spic::GameObject::AddComponent(std::shared_ptr<T> component) {
 //    component->Parent(this);
     component->Active(true);
     components.push_back(component);
 }
 
 template<class T>
-std::shared_ptr<spic::Component> spic::GameObject::GetComponent() const {
+std::shared_ptr<T> spic::GameObject::GetComponent() const {
     for (std::shared_ptr<spic::Component> component: components)
     {
         auto componentPtr = std::dynamic_pointer_cast<T>(component);
@@ -43,7 +43,7 @@ std::shared_ptr<spic::Component> spic::GameObject::GetComponent() const {
 }
 
 template<class T>
-std::vector<std::shared_ptr<spic::Component>> spic::GameObject::GetComponents() const {
+std::vector<std::shared_ptr<T>> spic::GameObject::GetComponents() const {
     std::vector<std::shared_ptr<spic::Component>> typeComponents;
 
     for (std::shared_ptr<spic::Component> component: components)
@@ -56,7 +56,7 @@ std::vector<std::shared_ptr<spic::Component>> spic::GameObject::GetComponents() 
 }
 
 template<class T>
-std::shared_ptr<spic::Component> spic::GameObject::GetComponentInChildren() const {
+std::shared_ptr<T> spic::GameObject::GetComponentInChildren() const {
     for (const std::shared_ptr<spic::GameObject>& child: children)
     {
         if (child) return child->GetComponent<T>();
@@ -66,12 +66,12 @@ std::shared_ptr<spic::Component> spic::GameObject::GetComponentInChildren() cons
 }
 
 template<class T>
-std::shared_ptr<spic::Component> spic::GameObject::GetComponentInParent() const {
+std::shared_ptr<T> spic::GameObject::GetComponentInParent() const {
     return parent ? parent->GetComponent<T>() : std::shared_ptr<T>{};
 }
 
 template<class T>
-std::vector<std::shared_ptr<spic::Component>> spic::GameObject::GetComponentsInChildren() const {
+std::vector<std::shared_ptr<T>> spic::GameObject::GetComponentsInChildren() const {
     std::vector<std::shared_ptr<spic::Component>> childComponents;
 
     for (const std::shared_ptr<spic::GameObject>& child: children)
@@ -87,6 +87,6 @@ std::vector<std::shared_ptr<spic::Component>> spic::GameObject::GetComponentsInC
 }
 
 template<class T>
-std::vector<std::shared_ptr<spic::Component>> spic::GameObject::GetComponentsInParent() const {
+std::vector<std::shared_ptr<T>> spic::GameObject::GetComponentsInParent() const {
     return parent ? parent->GetComponents<T>() : std::vector<std::shared_ptr<T>>{};
 }
