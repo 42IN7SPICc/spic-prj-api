@@ -164,25 +164,25 @@ namespace spic {
              * @brieft The parent of the GameObject
              * @return the current parent
              */
-             std::weak_ptr<spic::GameObject> Parent();
+             std::weak_ptr<GameObject> Parent();
 
             /**
              * @brieft The parent of the GameObject
              * @return the desired parent
              */
-             void Parent(std::weak_ptr<spic::GameObject> parent);
+             void Parent(std::weak_ptr<GameObject> parent);
 
             /**
              * @brieft The children of the GameObject
              * @return the current children
              */
-             std::vector<std::shared_ptr<spic::GameObject>> Children();
+             std::vector<std::shared_ptr<GameObject>> Children();
 
             /**
              * @brieft The components of the GameObject
              * @return the current components
              */
-             std::vector<std::shared_ptr<spic::Component>> Components();
+             std::vector<std::shared_ptr<Component>> Components();
 
             /**
              * @brief Activates/Deactivates the GameObject, depending on the given true or false value.
