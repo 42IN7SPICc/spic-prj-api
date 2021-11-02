@@ -426,6 +426,14 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="name
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacespic_1_1Input.html#a41b9e6bb5007fa8716c5a1464d5473d3">GetMouseButtonUp</a> (<a class="el" href="namespacespic_1_1Input.html#aedea49171a9999a91014688dd9c29b04">MouseButton</a> which)</td></tr>
 <tr class="memdesc:a41b9e6bb5007fa8716c5a1464d5473d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true during the frame the user releases the given mouse button. <br /></td></tr>
 <tr class="separator:a41b9e6bb5007fa8716c5a1464d5473d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93ae9afbfa243431318880416326611e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacespic_1_1Input.html#a93ae9afbfa243431318880416326611e">RegisterKeyListener</a> (<a class="el" href="classspic_1_1IKeyListener.html">IKeyListener</a> &amp;listener)</td></tr>
+<tr class="separator:a93ae9afbfa243431318880416326611e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2a57d8f3682e8015300924f2f0c899e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacespic_1_1Input.html#ae2a57d8f3682e8015300924f2f0c899e">UnregisterKeyListener</a> (<a class="el" href="classspic_1_1IKeyListener.html">IKeyListener</a> &amp;listener)</td></tr>
+<tr class="separator:ae2a57d8f3682e8015300924f2f0c899e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65a828f83fcd537e7cca3e29edc82905"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacespic_1_1Input.html#a65a828f83fcd537e7cca3e29edc82905">RegisterMouseListener</a> (<a class="el" href="classspic_1_1IMouseListener.html">IMouseListener</a> &amp;listener)</td></tr>
+<tr class="separator:a65a828f83fcd537e7cca3e29edc82905"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a660270ee7a7749dafbb550d62015123c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacespic_1_1Input.html#a660270ee7a7749dafbb550d62015123c">UnregisterMouseListener</a> (<a class="el" href="classspic_1_1IMouseListener.html">IMouseListener</a> &amp;listener)</td></tr>
+<tr class="separator:a660270ee7a7749dafbb550d62015123c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Some convenient input functions. </p>
@@ -453,6 +461,103 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="name
 <p>An enumeration describing the different keyboard keycodes. </p>
 <p>These keycodes are taken from the usb.org HID specification. See: <a href="https://www.usb.org/sites/default/files/documents/hut1_12v2.pdf">https://www.usb.org/sites/default/files/documents/hut1_12v2.pdf</a> page 53</p>
 <p>Incidentally, SDL also adheres to these values, which means you can cast the scancode from SDL to one of these values. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a93ae9afbfa243431318880416326611e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93ae9afbfa243431318880416326611e">&#9670;&nbsp;</a></span>RegisterKeyListener()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spic::Input::RegisterKeyListener </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classspic_1_1IKeyListener.html">IKeyListener</a> &amp;&#160;</td>
+          <td class="paramname"><em>listener</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Register a new key listener </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">listener</td><td>A reference to a key listener </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a65a828f83fcd537e7cca3e29edc82905"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65a828f83fcd537e7cca3e29edc82905">&#9670;&nbsp;</a></span>RegisterMouseListener()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spic::Input::RegisterMouseListener </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classspic_1_1IMouseListener.html">IMouseListener</a> &amp;&#160;</td>
+          <td class="paramname"><em>listener</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Register a new mouse listener </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">listener</td><td>A reference to a mouse listener </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae2a57d8f3682e8015300924f2f0c899e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2a57d8f3682e8015300924f2f0c899e">&#9670;&nbsp;</a></span>UnregisterKeyListener()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spic::Input::UnregisterKeyListener </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classspic_1_1IKeyListener.html">IKeyListener</a> &amp;&#160;</td>
+          <td class="paramname"><em>listener</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Unregister a key listener </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">listener</td><td>A reference to a key listener </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a660270ee7a7749dafbb550d62015123c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a660270ee7a7749dafbb550d62015123c">&#9670;&nbsp;</a></span>UnregisterMouseListener()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spic::Input::UnregisterMouseListener </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classspic_1_1IMouseListener.html">IMouseListener</a> &amp;&#160;</td>
+          <td class="paramname"><em>listener</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Unregister a mouse listener </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">listener</td><td>A reference to a mouse listener </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

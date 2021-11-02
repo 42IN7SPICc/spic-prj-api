@@ -71,23 +71,43 @@ $(function() {
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;GameObject.hpp&quot;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span>spic {</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="classspic_1_1UIObject.html">   11</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classspic_1_1UIObject.html">UIObject</a> : <span class="keyword">public</span> <a class="code" href="classspic_1_1GameObject.html">GameObject</a> {</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="classspic_1_1UIObject.html#a83c8b76ba8a61352945cb56c67af7d0b">   21</a></span>&#160;            <a class="code" href="classspic_1_1UIObject.html#a83c8b76ba8a61352945cb56c67af7d0b">UIObject</a>(<span class="keyword">const</span> std::string&amp; name, <span class="keyword">const</span> std::string&amp; tag, <span class="keywordtype">int</span> layer, <span class="keywordtype">double</span> width, <span class="keywordtype">double</span> height);</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            <span class="keywordtype">double</span> width;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            <span class="keywordtype">double</span> height;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    };</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// UIOBJECT_H_</span></div>
-<div class="ttc" id="aclassspic_1_1GameObject_html"><div class="ttname"><a href="classspic_1_1GameObject.html">spic::GameObject</a></div><div class="ttdoc">Any object which should be represented on screen.</div><div class="ttdef"><b>Definition:</b> GameObject.hpp:18</div></div>
-<div class="ttc" id="aclassspic_1_1UIObject_html"><div class="ttname"><a href="classspic_1_1UIObject.html">spic::UIObject</a></div><div class="ttdoc">Base class for a user interface object like Button or Text.</div><div class="ttdef"><b>Definition:</b> UIObject.hpp:11</div></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#if __has_include(&quot;UIObject_includes.hpp&quot;</span>)</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;UIObject_includes.hpp&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span>spic {</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="classspic_1_1UIObject.html">   15</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classspic_1_1UIObject.html">UIObject</a> : <span class="keyword">public</span> <a class="code" href="classspic_1_1GameObject.html">GameObject</a> {</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classspic_1_1UIObject.html#a83c8b76ba8a61352945cb56c67af7d0b">   25</a></span>&#160;            <a class="code" href="classspic_1_1UIObject.html#a83c8b76ba8a61352945cb56c67af7d0b">UIObject</a>(<span class="keyword">const</span> std::string&amp; name, <span class="keyword">const</span> std::string&amp; tag, <span class="keywordtype">int</span> layer, <span class="keywordtype">double</span> width, <span class="keywordtype">double</span> height);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classspic_1_1UIObject.html#a0417108e3eecd1a1342ee1b92c094241">   31</a></span>&#160;            <span class="keywordtype">double</span> <a class="code" href="classspic_1_1UIObject.html#a0417108e3eecd1a1342ee1b92c094241">Width</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classspic_1_1UIObject.html#a1d362d1a4ea3f0abdcedc3ba52700187">   37</a></span>&#160;            <span class="keywordtype">void</span> <a class="code" href="classspic_1_1UIObject.html#a1d362d1a4ea3f0abdcedc3ba52700187">Width</a>(<span class="keywordtype">double</span> newWidth);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classspic_1_1UIObject.html#a4412d10e9d1c68ddcd5aca3f2e70857e">   43</a></span>&#160;            <span class="keywordtype">double</span> <a class="code" href="classspic_1_1UIObject.html#a4412d10e9d1c68ddcd5aca3f2e70857e">Height</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="classspic_1_1UIObject.html#a8fd8fa64a56772d9878790f9f38cfe45">   49</a></span>&#160;            <span class="keywordtype">void</span> <a class="code" href="classspic_1_1UIObject.html#a8fd8fa64a56772d9878790f9f38cfe45">Height</a>(<span class="keywordtype">double</span> newHeight);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            <span class="keywordtype">double</span> width;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            <span class="keywordtype">double</span> height;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#if __has_include(&quot;UIObject_private.hpp&quot;</span>)</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#include &quot;UIObject_private.hpp&quot;</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    };</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// UIOBJECT_H_</span></div>
+<div class="ttc" id="aclassspic_1_1GameObject_html"><div class="ttname"><a href="classspic_1_1GameObject.html">spic::GameObject</a></div><div class="ttdoc">Any object which should be represented on screen.</div><div class="ttdef"><b>Definition:</b> GameObject.hpp:19</div></div>
+<div class="ttc" id="aclassspic_1_1UIObject_html"><div class="ttname"><a href="classspic_1_1UIObject.html">spic::UIObject</a></div><div class="ttdoc">Base class for a user interface object like Button or Text.</div><div class="ttdef"><b>Definition:</b> UIObject.hpp:15</div></div>
+<div class="ttc" id="aclassspic_1_1UIObject_html_a0417108e3eecd1a1342ee1b92c094241"><div class="ttname"><a href="classspic_1_1UIObject.html#a0417108e3eecd1a1342ee1b92c094241">spic::UIObject::Width</a></div><div class="ttdeci">double Width() const</div><div class="ttdoc">Get the width of the UIObject.</div></div>
+<div class="ttc" id="aclassspic_1_1UIObject_html_a1d362d1a4ea3f0abdcedc3ba52700187"><div class="ttname"><a href="classspic_1_1UIObject.html#a1d362d1a4ea3f0abdcedc3ba52700187">spic::UIObject::Width</a></div><div class="ttdeci">void Width(double newWidth)</div><div class="ttdoc">Set the width of the UIObject.</div></div>
+<div class="ttc" id="aclassspic_1_1UIObject_html_a4412d10e9d1c68ddcd5aca3f2e70857e"><div class="ttname"><a href="classspic_1_1UIObject.html#a4412d10e9d1c68ddcd5aca3f2e70857e">spic::UIObject::Height</a></div><div class="ttdeci">double Height() const</div><div class="ttdoc">Get the height of the UIObject.</div></div>
 <div class="ttc" id="aclassspic_1_1UIObject_html_a83c8b76ba8a61352945cb56c67af7d0b"><div class="ttname"><a href="classspic_1_1UIObject.html#a83c8b76ba8a61352945cb56c67af7d0b">spic::UIObject::UIObject</a></div><div class="ttdeci">UIObject(const std::string &amp;name, const std::string &amp;tag, int layer, double width, double height)</div><div class="ttdoc">Constructor.</div></div>
+<div class="ttc" id="aclassspic_1_1UIObject_html_a8fd8fa64a56772d9878790f9f38cfe45"><div class="ttname"><a href="classspic_1_1UIObject.html#a8fd8fa64a56772d9878790f9f38cfe45">spic::UIObject::Height</a></div><div class="ttdeci">void Height(double newHeight)</div><div class="ttdoc">Set the height of the UIObject.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

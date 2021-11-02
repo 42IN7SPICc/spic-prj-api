@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['contents_220',['contents',['../classspic_1_1Scene.html#a073965b459f27d58005051e0138151a6',1,'spic::Scene']]]
+  ['fullscreen_257',['fullscreen',['../structspic_1_1Config.html#a17afafc0dc3f280564fccb48c2e3ec4e',1,'spic::Config']]]
 ];

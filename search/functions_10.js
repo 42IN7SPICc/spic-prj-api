@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['white_217',['white',['../classspic_1_1Color.html#ab148408a6db0248e5c1da4049b932c7e',1,'spic::Color']]],
-  ['width_218',['Width',['../classspic_1_1BoxCollider.html#afd0f980c3c0a29ecf16b2ba1a4f0472f',1,'spic::BoxCollider::Width() const'],['../classspic_1_1BoxCollider.html#affecc78d60a4d85f0fcd07740a0ad82a',1,'spic::BoxCollider::Width(double newWidth)']]]
+  ['volume_253',['Volume',['../classspic_1_1AudioSource.html#aeb376a3318e0b36fcfd94574156fe25e',1,'spic::AudioSource::Volume() const'],['../classspic_1_1AudioSource.html#a547888b92f72bb44a93164f781786f40',1,'spic::AudioSource::Volume(double newVolume)']]]
 ];
