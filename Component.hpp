@@ -25,6 +25,8 @@ namespace spic {
              */
             void Active(bool flag) { active = flag; }
 
+            virtual ~Component() = default;
+
             /**
              * @brief The parent of this component
              * @param parent the current parent

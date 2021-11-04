@@ -34,3 +34,4 @@
 /docs/
 
 .idea/
+cmake-build-debug
