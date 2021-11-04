@@ -1,1 +1,1 @@
-std::vector<std::shared_ptr<GameObject>> _contents
+std::vector<std::shared_ptr<GameObject>> _contents;
