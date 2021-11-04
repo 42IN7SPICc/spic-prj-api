@@ -4,6 +4,10 @@
 #include "UIObject.hpp"
 #include <functional>
 
+#if __has_include("Button_includes.hpp")
+#include "Button_includes.hpp"
+#endif
+
 namespace spic {
 
     /**
@@ -24,6 +28,7 @@ namespace spic {
             /**
              * @brief This function is called when the button is clicked, which
              *        will trigger a call to the registered onClick member.
+             * @spicapi
              */
             void Click();
 
@@ -31,8 +36,21 @@ namespace spic {
              * @brief Register the onClick handler to be used when the button is clicked.
              * @param callback The function to register, usually a lambda. But this can be
              *        any kind of callable.
+             * @spicapi
              */
             void OnClick(std::function<void()> callback) { onClick = callback; }
+
+            /**
+             * @brief Get if the button is interactable
+             * @return A boolean flag if the button is interactable or not
+             */
+            bool Interactable() const;
+
+            /**
+             * @brief Set if the button is interactable
+             * @param isInteractable A new boolean value to define if the button should be interactable or not
+             */
+            void Interactable(bool isInteractable);
 
         private:
             /**
@@ -44,6 +62,10 @@ namespace spic {
              * @brief The registered click handler.
              */
             std::function<void()> onClick;
+
+#if __has_include("Button_private.hpp")
+#include "Button_private.hpp"
+#endif
     };
 
 }
