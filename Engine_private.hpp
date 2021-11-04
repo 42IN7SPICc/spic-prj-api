@@ -1,0 +1,1 @@
+std::stack<std::shared_ptr<Scene>> _scenes;
