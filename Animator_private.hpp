@@ -1,1 +1,1 @@
-std::vector<std::shared_ptr<Sprite>> sprites;
+std::vector<std::shared_ptr<Sprite>> _sprites;
