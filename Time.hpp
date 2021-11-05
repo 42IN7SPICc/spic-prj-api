@@ -28,6 +28,13 @@ namespace spic {
              */
             static void TimeScale(double newTimeScale);
 
+            /**
+             * @brief The interval in seconds from the last frame to the current one.
+             * @param newDeltaTime The new value for Delta Time.
+             * @spicapi
+             */
+            static void DeltaTime(double newDeltaTime);
+
         private:
             static double deltaTime;
             static double timeScale;

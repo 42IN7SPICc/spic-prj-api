@@ -19,8 +19,10 @@ namespace spic {
              * @brief Constructor.
              * @param audioClip The source tho the audio clip.
              * @param playOnAwake Whether the audio should start playing automatically.
+             * @param looping Automatically start over when done.
+             * @param volume The volume level of the AudioSource.
              */
-            AudioSource(const std::string& audioClip, bool playOnAwake);
+            AudioSource(const std::string& audioClip, bool playOnAwake, bool looping, double volume);
 
             /**
              * @brief Call this method to start playing audio.
