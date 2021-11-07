@@ -1,13 +1,12 @@
 var searchData=
 [
-  ['debug_104',['Debug',['../namespacespic_1_1Debug.html',1,'spic']]],
-  ['input_105',['Input',['../namespacespic_1_1Input.html',1,'spic']]],
-  ['scene_106',['Scene',['../classspic_1_1Scene.html',1,'spic']]],
-  ['setcolor_107',['SetColor',['../classspic_1_1Color.html#afb0df0bae7b0d2ab2c48e7bfa42cbf0a',1,'spic::Color::SetColor(double r, double g, double b)'],['../classspic_1_1Color.html#aca4293f70e6979b027289545b8d5b546',1,'spic::Color::SetColor(double r, double g, double b, double a)']]],
-  ['size_108',['Size',['../classspic_1_1Text.html#adbd1abe4606aa24f1b34e94c1a308b3a',1,'spic::Text::Size() const'],['../classspic_1_1Text.html#aff1a68416fe5b84e8c1fc329c63dd0cd',1,'spic::Text::Size(int size)']]],
-  ['sortinglayer_109',['SortingLayer',['../classspic_1_1Sprite.html#a2884a2dbe3b667b82139278508a11783',1,'spic::Sprite::SortingLayer(int sortingLayer)'],['../classspic_1_1Sprite.html#af6282045f1472366641d4aece5bed307',1,'spic::Sprite::SortingLayer() const']]],
-  ['spic_2dprj_2dapi_110',['spic-prj-api',['../md_README.html',1,'']]],
-  ['sprite_111',['Sprite',['../classspic_1_1Sprite.html',1,'spic::Sprite'],['../classspic_1_1Sprite.html#af77fcf44d3bc02efbdf1d66b8bd8010c',1,'spic::Sprite::Sprite(const std::string &amp;sprite, bool flipX, bool flipY, int sortingLayer, int orderLayer)'],['../classspic_1_1Sprite.html#ade8fcad6447e8c0dff43ddbcc5a7542d',1,'spic::Sprite::Sprite(const std::string &amp;sprite, const Color &amp;color, bool flipX, bool flipY, int sortingLayer, int orderInLayer)']]],
-  ['started_112',['Started',['../classspic_1_1BehaviourScript.html#a488f2faed701bf95f373aa5c0f0f4e15',1,'spic::BehaviourScript::Started(bool started)'],['../classspic_1_1BehaviourScript.html#afe22f4c3c743240c30563002b1ab08b7',1,'spic::BehaviourScript::Started() const']]],
-  ['stop_113',['Stop',['../classspic_1_1Animator.html#a061b63d83ceb2dceec94d6ec0c0f73b4',1,'spic::Animator::Stop()'],['../classspic_1_1AudioSource.html#a88f2d65890e4ce1de154dd3e90b4158f',1,'spic::AudioSource::Stop()']]]
+  ['r_101',['R',['../classspic_1_1Color.html#a8637adbaa095b057535bbe725ce6416a',1,'spic::Color']]],
+  ['radius_102',['Radius',['../classspic_1_1CircleCollider.html#aae4f253513624db15666c868ee3e50bb',1,'spic::CircleCollider::Radius() const'],['../classspic_1_1CircleCollider.html#a054a05ed8fd0b5f7bec554d7c8211890',1,'spic::CircleCollider::Radius(double newRadius)']]],
+  ['red_103',['red',['../classspic_1_1Color.html#aabd56f016cd6801df2cb8a4e8c99be70',1,'spic::Color']]],
+  ['registerkeylistener_104',['RegisterKeyListener',['../namespacespic_1_1Input.html#a93ae9afbfa243431318880416326611e',1,'spic::Input']]],
+  ['registermouselistener_105',['RegisterMouseListener',['../namespacespic_1_1Input.html#a65a828f83fcd537e7cca3e29edc82905',1,'spic::Input']]],
+  ['removechild_106',['RemoveChild',['../classspic_1_1GameObject.html#ab965b50e4d92b5630203c096cbf5fdd2',1,'spic::GameObject']]],
+  ['render_107',['Render',['../classspic_1_1Camera.html#a5f94f15ac7ce47e42436d138f09dbbfb',1,'spic::Camera']]],
+  ['renderscene_108',['RenderScene',['../classspic_1_1Scene.html#af93b0e10186dff5f5701d5c6262e378e',1,'spic::Scene']]],
+  ['rigidbody_109',['RigidBody',['../classspic_1_1RigidBody.html#a1a87e07b6fa8c21cb27be2e15e9c1989',1,'spic::RigidBody::RigidBody()'],['../classspic_1_1RigidBody.html',1,'spic::RigidBody']]]
 ];

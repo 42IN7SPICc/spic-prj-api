@@ -8,5 +8,7 @@ var searchData=
   ['animator_5',['Animator',['../classspic_1_1Animator.html#a79fa7a3c4485a42ee32fad014c656fd3',1,'spic::Animator::Animator()'],['../classspic_1_1Animator.html',1,'spic::Animator']]],
   ['anykey_6',['AnyKey',['../namespacespic_1_1Input.html#ad29cd24d375d286a6d45cd89adc529f1',1,'spic::Input']]],
   ['anykeydown_7',['AnyKeyDown',['../namespacespic_1_1Input.html#a73a7d5c8226f21b0cf3ef485cc233ebd',1,'spic::Input']]],
-  ['audiosource_8',['AudioSource',['../classspic_1_1AudioSource.html#ae4380ce74c60344fb0176797a2e7d374',1,'spic::AudioSource::AudioSource()'],['../classspic_1_1AudioSource.html',1,'spic::AudioSource']]]
+  ['aspectheight_8',['AspectHeight',['../classspic_1_1Camera.html#a386f4df55ff10886a4f0c7f2fa42cab4',1,'spic::Camera::AspectHeight(double newAspectHeight)'],['../classspic_1_1Camera.html#a8f0a1139a7f108b91a4a070ded6ffe5c',1,'spic::Camera::AspectHeight() const']]],
+  ['aspectwidth_9',['AspectWidth',['../classspic_1_1Camera.html#a1bcb155ebb6442b1fa5117ce7fcfa124',1,'spic::Camera::AspectWidth() const'],['../classspic_1_1Camera.html#adf2016459c06cc8ca9e927ba2b852d8f',1,'spic::Camera::AspectWidth(double newAspectWidth)']]],
+  ['audiosource_10',['AudioSource',['../classspic_1_1AudioSource.html#ae4380ce74c60344fb0176797a2e7d374',1,'spic::AudioSource::AudioSource()'],['../classspic_1_1AudioSource.html',1,'spic::AudioSource']]]
 ];
