@@ -14,6 +14,7 @@ namespace spic {
 
     /**
      * @brief Class representing a scene which can be rendered by the Camera.
+     * @spicapi
      */
     class Scene {
         public:

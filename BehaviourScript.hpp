@@ -48,12 +48,14 @@ namespace spic {
             /**
              * @brief Whether the script has been started.
              * @param started desired value
+             * @sharedapi
              */
             void Started(bool started);
 
             /**
              * @brief Whether the script has been started.
              * @return current value
+             * @sharedapi
              */
             bool Started() const;
 

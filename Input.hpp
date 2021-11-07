@@ -14,6 +14,7 @@ namespace spic {
 
     /**
      * @brief Some convenient input functions.
+     * @spicapi
      */
     namespace Input {
 
@@ -338,24 +339,28 @@ namespace spic {
         /**
          * Register a new key listener
          * @param listener A reference to a key listener
+         * @sharedapi
          */
         void RegisterKeyListener(IKeyListener& listener);
 
         /**
          * Unregister a key listener
          * @param listener A reference to a key listener
+         * @sharedapi
          */
         void UnregisterKeyListener(IKeyListener& listener);
 
         /**
          * Register a new mouse listener
          * @param listener A reference to a mouse listener
+         * @sharedapi
          */
         void RegisterMouseListener(IMouseListener& listener);
 
         /**
          * Unregister a mouse listener
          * @param listener A reference to a mouse listener
+         * @sharedapi
          */
         void UnregisterMouseListener(IMouseListener& listener);
 

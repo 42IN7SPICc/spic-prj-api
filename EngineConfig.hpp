@@ -7,6 +7,7 @@ namespace spic {
 
     /**
      * @brief A struct representing the engine configuration.
+     * @sharedapi
      */
     struct EngineConfig {
 
