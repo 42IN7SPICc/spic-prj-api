@@ -22,13 +22,13 @@ namespace spic {
              * @return true if active, false otherwise.
              * @spicapi
              */
-            bool Active() const { return active; }
+            bool Active() const;
 
             /**
              * @brief flag New active status.
              * @spicapi
              */
-            void Active(bool flag) { active = flag; }
+            void Active(bool flag);
 
             virtual ~Component() = default;
 
