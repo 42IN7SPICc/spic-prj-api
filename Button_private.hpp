@@ -1,1 +1,1 @@
-spic::IMouseListener _listener
+spic::IMouseListener _listener;
