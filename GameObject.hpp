@@ -19,6 +19,8 @@ namespace spic {
      */
     class GameObject {
         public:
+            virtual ~GameObject() = default;
+
             /**
              * @brief Finds a GameObject by name and returns it.
              * @param name The name of the GameObject you want to find.
@@ -121,6 +123,13 @@ namespace spic {
              */
             template<class T>
             void AddComponent(std::shared_ptr<T> component);
+
+            /**
+             * @brief Removes a component from a game object.
+             * @param component Reference to the component.
+             * @sharedapi
+             */
+            void RemoveComponent(std::shared_ptr<Component> component);
 
             /**
              * @brief Get the first component of the specified type. Must be

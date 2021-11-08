@@ -17,6 +17,8 @@ namespace spic {
      */
     class Component {
         public:
+            virtual ~Component() = default;
+
             /**
              * @brief Getter for active status.
              * @return true if active, false otherwise.
