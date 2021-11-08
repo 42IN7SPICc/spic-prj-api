@@ -18,17 +18,3 @@ Color Color::_transparent{0.0, 0.0, 0.0, 0.0};
 
 Color::Color(double red, double green, double blue, double alpha)
         : r{red}, g{green}, b{blue}, a{alpha} {}
-
-Color::Color(double red, double green, double blue)
-        : Color(red, green, blue, 1.0) {}
-
-void Color::SetColor(double r, double g, double b) {
-    SetColor(r, g, b, a);
-}
-
-void Color::SetColor(double r, double g, double b, double a) {
-    this->r = r;
-    this->g = g;
-    this->b = b;
-    this->a = a;
-}

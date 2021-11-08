@@ -9,6 +9,11 @@
 #endif
 
 namespace spic {
+
+    /**
+     * @brief The engine class responsible for the game loop.
+     * @sharedapi
+     */
     class Engine {
     private:
         static Engine instance;

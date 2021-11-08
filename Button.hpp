@@ -12,6 +12,7 @@ namespace spic {
 
     /**
      * @brief Instances of this class are clickable user interface items.
+     * @spicapi
      */
     class Button : public UIObject {
         public:
@@ -22,6 +23,7 @@ namespace spic {
              * @param layer The layer for the game object.
              * @param width The width of the UI object.
              * @param height The height of the UI object.
+             * @sharedapi
              */
             Button(const std::string& name, const std::string& tag, int layer, double width, double height);
 
@@ -43,23 +45,27 @@ namespace spic {
             /**
              * @brief Get if the button is interactable
              * @return A boolean flag if the button is interactable or not
+             * @sharedapi
              */
             bool Interactable() const;
 
             /**
              * @brief Set if the button is interactable
              * @param isInteractable A new boolean value to define if the button should be interactable or not
+             * @sharedapi
              */
             void Interactable(bool isInteractable);
 
         private:
             /**
              * @brief When false, the button will not react to clicks.
+             * @spicapi
              */
             bool interactable;
 
             /**
              * @brief The registered click handler.
+             * @spicapi
              */
             std::function<void()> onClick;
 

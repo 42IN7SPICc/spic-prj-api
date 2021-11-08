@@ -5,6 +5,7 @@ namespace spic {
 
     /**
      * @brief Color represents a red-green-blue color with alpha.
+     * @spicapi
      */
     class Color {
         public:
@@ -13,6 +14,7 @@ namespace spic {
              * @param red The red component, 0 ≤ r ≤ 1.
              * @param green The green component, 0 ≤ g ≤ 1.
              * @param blue The blue component, 0 ≤ b ≤ 1.
+             * @sharedapi
              */
             Color(double red, double green, double blue);
             
@@ -85,68 +87,78 @@ namespace spic {
             /**
              * @brief One of the standard colors (read-only): purple.
              * @return A reference to a statically allocated Color instance.
+             * @sharedapi
              */
-            static const Color& purple() { return _purple; }
+            static const Color& purple();
 
             /**
              * @brief One of the standard colors (read-only): lime.
              * @return A reference to a statically allocated Color instance.
+             * @sharedapi
              */
-            static const Color& lime() { return _lime; }
+            static const Color& lime();
 
             /**
              * @brief One of the standard colors (read-only): orange.
              * @return A reference to a statically allocated Color instance.
+             * @sharedapi
              */
-            static const Color& orange() { return _orange; }
+            static const Color& orange();
 
             /**
              * @brief One of the standard colors (read-only): transparent.
              * @return A reference to a statically allocated Color instance.
+             * @sharedapi
              */
-            static const Color& transparent() { return _transparent; }
+            static const Color& transparent();
             // ... more standard colors here
 
             /**
              * @brief Set the RGB values of the color
-             * @param r The red part of the color
-             * @param g The green part of the color
-             * @param b The blue part of the color
+             * @param red The red part of the color
+             * @param green The green part of the color
+             * @param blue The blue part of the color
+             * @sharedapi
              */
-            void SetColor(double r, double g, double b);
+            void SetColor(double red, double green, double blue);
 
             /**
              * @brief Set the RGBA values of the color
-             * @param r The red part of the color
-             * @param g The green part of the color
-             * @param b The blue part of the color
-             * @param a The alpha part of the color
+             * @param red The red part of the color
+             * @param green The green part of the color
+             * @param blue The blue part of the color
+             * @param alpha The alpha part of the color
+             * @sharedapi
              */
-            void SetColor(double r, double g, double b, double a);
+            void SetColor(double red, double green, double blue, double alpha);
             
             /**
              * @brief The red part of the color
              * @return A reference to the statically red part of the color.
+             * @sharedapi
              */
-            double R() const { return r; }
+            double R() const;
 
             /**
              * @brief The green part of the color
              * @return A reference to the statically green part of the color.
+             * @sharedapi
              */
-            double G() const { return g; }
+            double G() const;
             
             /**
              * @brief The blue part of the color
              * @return A reference to the statically blue part of the color.
+             * @sharedapi
              */
-            double B() const { return b; }
+            double B() const;
 
             /**
              * @brief The alpha part of the color
              * @return A reference to the statically alpha part of the color.
+             * @sharedapi
              */
-            double A() const { return a; }
+            double A() const;
 
         private:
             double r;

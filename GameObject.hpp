@@ -15,9 +15,12 @@ namespace spic {
 
     /**
      * @brief Any object which should be represented on screen.
+     * @spicapi
      */
     class GameObject {
         public:
+            virtual ~GameObject() = default;
+
             /**
              * @brief Finds a GameObject by name and returns it.
              * @param name The name of the GameObject you want to find.
@@ -122,6 +125,13 @@ namespace spic {
             void AddComponent(std::shared_ptr<T> component);
 
             /**
+             * @brief Removes a component from a game object.
+             * @param component Reference to the component.
+             * @sharedapi
+             */
+            void RemoveComponent(std::shared_ptr<Component> component);
+
+            /**
              * @brief Get the first component of the specified type. Must be
              *        a valid subclass of Component.
              * @return Pointer to Component instance.
@@ -205,50 +215,72 @@ namespace spic {
             /**
              * @brief Returns the transform of this GameObject
              * @return A reference to the transform
+             * @sharedapi
              */
             spic::Transform& Transform();
 
             /**
              * @brief Returns a const reference to the transform of this GameObject
              * @return A const reference to the transform
+             * @sharedapi
              */
             const spic::Transform& Transform() const;
 
             /**
              * The parent of this GameObject.
              * @return A weak pointer to the parent.
+             * @sharedapi
              */
             std::weak_ptr<GameObject> Parent();
 
             /**
              * The parent of this GameObject.
              * @param parent A weak pointer to the new parent
+             * @sharedapi
              */
             void Parent(std::weak_ptr<GameObject> parent);
 
             /**
              * Returns a list of children in this GameObject.
              * @return A list of shared pointers to the children.
+             * @sharedapi
              */
             const std::vector<std::shared_ptr<GameObject>>& Children() const;
 
             /**
              * Add a child to the children of this GameObject.
              * @param child the child to add.
+             * @sharedapi
              */
             void AddChild(std::shared_ptr<GameObject> child);
 
             /**
              * Remove a child from the children of this GameObject.
              * @param child the child to remove.
+             * @sharedapi
              */
             void RemoveChild(std::shared_ptr<GameObject> child);
 
-            const std::string& Name() { return name; }
+            /**
+             * Retrieve the name of this GameObject.
+             * @return the name of this GameObject.
+             * @sharedapi
+             */
+            const std::string& Name() const;
 
-            const std::string& Tag() { return tag; }
+            /**
+             * Retrieve the tag of this GameObject.
+             * @return the tag of this GameObject.
+             * @sharedapi
+             */
+            const std::string& Tag() const;
 
-            int Layer() { return layer; }
+            /**
+             * Retrieve the layer of this GameObject.
+             * @return the layer of this GameObject.
+             * @sharedapi
+             */
+            int Layer() const;
 
             // Include "package private" methods
 #if __has_include("GameObject_public.hpp")

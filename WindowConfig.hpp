@@ -7,6 +7,7 @@ namespace spic {
 
     /**
      * @brief A struct representing the window configuration
+     * @sharedapi
      */
     struct WindowConfig {
 

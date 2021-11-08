@@ -7,17 +7,20 @@ namespace spic {
 
     /**
      * @brief A collider which represents a circular collision area.
+     * @spicapi
      */
     class CircleCollider : public Collider {
         public:
             /**
              * @brief Constructor.
+             * @sharedapi
              */
             CircleCollider();
 
             /**
              * @brief Constructor.
              * @param radius The radius for the box collider.
+             * @sharedapi
              */
             CircleCollider(double radius);
 
