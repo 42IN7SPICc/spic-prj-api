@@ -95,12 +95,12 @@ $(function() {
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt;</div>
 <div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classspic_1_1GameObject.html#aed4e802151d6274b28edb997f61fab40">   28</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classspic_1_1GameObject.html#aed4e802151d6274b28edb997f61fab40">spic::GameObject::AddComponent</a>(std::shared_ptr&lt;T&gt; component) {</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    component-&gt;Active(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    components.push_back(component);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    _components.push_back(component);</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt;</div>
 <div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classspic_1_1GameObject.html#a169dd1691be6e4e04eba122e0b423c4c">   34</a></span>&#160;std::shared_ptr&lt;T&gt; <a class="code" href="classspic_1_1GameObject.html#a169dd1691be6e4e04eba122e0b423c4c">spic::GameObject::GetComponent</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordflow">for</span> (std::shared_ptr&lt;spic::Component&gt; component: components)</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordflow">for</span> (std::shared_ptr&lt;spic::Component&gt; component: _components)</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    {</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keyword">auto</span> componentPtr = std::dynamic_pointer_cast&lt;T&gt;(component);</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keywordflow">if</span> (componentPtr) <span class="keywordflow">return</span> componentPtr;</div>
@@ -113,7 +113,7 @@ $(function() {
 <div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classspic_1_1GameObject.html#a8ec58bbb6238b7a2e23d0209dbf2b9f2">   45</a></span>&#160;std::vector&lt;std::shared_ptr&lt;T&gt;&gt; <a class="code" href="classspic_1_1GameObject.html#a8ec58bbb6238b7a2e23d0209dbf2b9f2">spic::GameObject::GetComponents</a>()<span class="keyword"> const </span>{</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    std::vector&lt;std::shared_ptr&lt;T&gt;&gt; typeComponents;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">for</span> (std::shared_ptr&lt;spic::Component&gt; component: components)</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">for</span> (std::shared_ptr&lt;spic::Component&gt; component: _components)</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    {</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keyword">auto</span> componentPtr = std::dynamic_pointer_cast&lt;T&gt;(component);</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordflow">if</span> (componentPtr) typeComponents.push_back(componentPtr);</div>
@@ -124,7 +124,7 @@ $(function() {
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt;</div>
 <div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="classspic_1_1GameObject.html#aa86275cdb4c3c038256a6ca55f40ee0b">   58</a></span>&#160;std::shared_ptr&lt;T&gt; <a class="code" href="classspic_1_1GameObject.html#aa86275cdb4c3c038256a6ca55f40ee0b">spic::GameObject::GetComponentInChildren</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">const</span> std::shared_ptr&lt;spic::GameObject&gt;&amp; child: children)</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">const</span> std::shared_ptr&lt;spic::GameObject&gt;&amp; child: _children)</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    {</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordflow">if</span> (child) <span class="keywordflow">return</span> child-&gt;GetComponent&lt;T&gt;();</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    }</div>
@@ -134,14 +134,14 @@ $(function() {
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt;</div>
 <div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="classspic_1_1GameObject.html#ad6695cc1ae949ba0cc61b49102a6b680">   68</a></span>&#160;std::shared_ptr&lt;T&gt; <a class="code" href="classspic_1_1GameObject.html#ad6695cc1ae949ba0cc61b49102a6b680">spic::GameObject::GetComponentInParent</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordflow">return</span> !parent.expired() ? parent.lock()-&gt;GetComponent&lt;T&gt;() : std::shared_ptr&lt;T&gt;{};</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordflow">return</span> !_parent.expired() ? _parent.lock()-&gt;GetComponent&lt;T&gt;() : std::shared_ptr&lt;T&gt;{};</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt;</div>
 <div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="classspic_1_1GameObject.html#a3d74d203dc750de5d6f61e635e1918d5">   73</a></span>&#160;std::vector&lt;std::shared_ptr&lt;T&gt;&gt; <a class="code" href="classspic_1_1GameObject.html#a3d74d203dc750de5d6f61e635e1918d5">spic::GameObject::GetComponentsInChildren</a>()<span class="keyword"> const </span>{</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    std::vector&lt;std::shared_ptr&lt;T&gt;&gt; childComponents;</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">const</span> std::shared_ptr&lt;spic::GameObject&gt;&amp; child: children)</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">const</span> std::shared_ptr&lt;spic::GameObject&gt;&amp; child: _children)</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    {</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keywordflow">if</span> (child)</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        {</div>
@@ -155,7 +155,7 @@ $(function() {
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt;</div>
 <div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="classspic_1_1GameObject.html#a388588ced4a1a9a8f46e20e4ebdc046b">   89</a></span>&#160;std::vector&lt;std::shared_ptr&lt;T&gt;&gt; <a class="code" href="classspic_1_1GameObject.html#a388588ced4a1a9a8f46e20e4ebdc046b">spic::GameObject::GetComponentsInParent</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordflow">return</span> !parent.expired() ? parent.lock()-&gt;GetComponents&lt;T&gt;() : std::vector&lt;std::shared_ptr&lt;T&gt;&gt;{};</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordflow">return</span> !_parent.expired() ? _parent.lock()-&gt;GetComponents&lt;T&gt;() : std::vector&lt;std::shared_ptr&lt;T&gt;&gt;{};</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;}</div>
 <div class="ttc" id="aclassspic_1_1GameObject_html_a169dd1691be6e4e04eba122e0b423c4c"><div class="ttname"><a href="classspic_1_1GameObject.html#a169dd1691be6e4e04eba122e0b423c4c">spic::GameObject::GetComponent</a></div><div class="ttdeci">std::shared_ptr&lt; T &gt; GetComponent() const</div><div class="ttdoc">Get the first component of the specified type. Must be a valid subclass of Component.</div><div class="ttdef"><b>Definition:</b> GameObject_templates.hpp:34</div></div>
 <div class="ttc" id="aclassspic_1_1GameObject_html_a1980a2e1005b3e62a63c9b9e3535cf92"><div class="ttname"><a href="classspic_1_1GameObject.html#a1980a2e1005b3e62a63c9b9e3535cf92">spic::GameObject::FindObjectsOfType</a></div><div class="ttdeci">static std::vector&lt; std::shared_ptr&lt; T &gt; &gt; FindObjectsOfType(bool includeInactive=false)</div><div class="ttdoc">Gets a list of all loaded objects of Type type.</div><div class="ttdef"><b>Definition:</b> GameObject_templates.hpp:15</div></div>
