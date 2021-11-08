@@ -32,8 +32,6 @@ namespace spic {
              */
             void Active(bool flag) { active = flag; }
 
-            virtual ~Component() = default;
-
             /**
              * @brief Get the GameObject this component belongs to.
              * @sharedapi
