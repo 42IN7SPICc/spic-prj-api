@@ -27,12 +27,12 @@ std::vector<std::shared_ptr<T>> spic::GameObject::FindObjectsOfType(bool include
 template<class T>
 void spic::GameObject::AddComponent(std::shared_ptr<T> component) {
     component->Active(true);
-    components.push_back(component);
+    _components.push_back(component);
 }
 
 template<class T>
 std::shared_ptr<T> spic::GameObject::GetComponent() const {
-    for (std::shared_ptr<spic::Component> component: components)
+    for (std::shared_ptr<spic::Component> component: _components)
     {
         auto componentPtr = std::dynamic_pointer_cast<T>(component);
         if (componentPtr) return componentPtr;
@@ -45,7 +45,7 @@ template<class T>
 std::vector<std::shared_ptr<T>> spic::GameObject::GetComponents() const {
     std::vector<std::shared_ptr<T>> typeComponents;
 
-    for (std::shared_ptr<spic::Component> component: components)
+    for (std::shared_ptr<spic::Component> component: _components)
     {
         auto componentPtr = std::dynamic_pointer_cast<T>(component);
         if (componentPtr) typeComponents.push_back(componentPtr);
@@ -56,7 +56,7 @@ std::vector<std::shared_ptr<T>> spic::GameObject::GetComponents() const {
 
 template<class T>
 std::shared_ptr<T> spic::GameObject::GetComponentInChildren() const {
-    for (const std::shared_ptr<spic::GameObject>& child: children)
+    for (const std::shared_ptr<spic::GameObject>& child: _children)
     {
         if (child) return child->GetComponent<T>();
     }
@@ -66,14 +66,14 @@ std::shared_ptr<T> spic::GameObject::GetComponentInChildren() const {
 
 template<class T>
 std::shared_ptr<T> spic::GameObject::GetComponentInParent() const {
-    return !parent.expired() ? parent.lock()->GetComponent<T>() : std::shared_ptr<T>{};
+    return !_parent.expired() ? _parent.lock()->GetComponent<T>() : std::shared_ptr<T>{};
 }
 
 template<class T>
 std::vector<std::shared_ptr<T>> spic::GameObject::GetComponentsInChildren() const {
     std::vector<std::shared_ptr<T>> childComponents;
 
-    for (const std::shared_ptr<spic::GameObject>& child: children)
+    for (const std::shared_ptr<spic::GameObject>& child: _children)
     {
         if (child)
         {
@@ -87,5 +87,5 @@ std::vector<std::shared_ptr<T>> spic::GameObject::GetComponentsInChildren() cons
 
 template<class T>
 std::vector<std::shared_ptr<T>> spic::GameObject::GetComponentsInParent() const {
-    return !parent.expired() ? parent.lock()->GetComponents<T>() : std::vector<std::shared_ptr<T>>{};
+    return !_parent.expired() ? _parent.lock()->GetComponents<T>() : std::vector<std::shared_ptr<T>>{};
 }
