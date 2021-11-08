@@ -104,6 +104,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aed4e802151d6274b28edb997f61fab40"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classspic_1_1GameObject.html#aed4e802151d6274b28edb997f61fab40">AddComponent</a> (std::shared_ptr&lt; T &gt; component)</td></tr>
 <tr class="memdesc:aed4e802151d6274b28edb997f61fab40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a <a class="el" href="classspic_1_1Component.html" title="Base class for all components.">Component</a> of the specified type. Must be a valid subclass of <a class="el" href="classspic_1_1Component.html" title="Base class for all components.">Component</a>. The <a class="el" href="classspic_1_1GameObject.html" title="Any object which should be represented on screen.">GameObject</a> assumes ownership of the <a class="el" href="classspic_1_1Component.html" title="Base class for all components.">Component</a>.  <a href="classspic_1_1GameObject.html#aed4e802151d6274b28edb997f61fab40">More...</a><br /></td></tr>
 <tr class="separator:aed4e802151d6274b28edb997f61fab40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5e76b21a482fa65f1294fe299964671"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classspic_1_1GameObject.html#ab5e76b21a482fa65f1294fe299964671">RemoveComponent</a> (std::shared_ptr&lt; <a class="el" href="classspic_1_1Component.html">Component</a> &gt; component)</td></tr>
+<tr class="memdesc:ab5e76b21a482fa65f1294fe299964671"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a component from a game object.  <a href="classspic_1_1GameObject.html#ab5e76b21a482fa65f1294fe299964671">More...</a><br /></td></tr>
+<tr class="separator:ab5e76b21a482fa65f1294fe299964671"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a169dd1691be6e4e04eba122e0b423c4c"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:a169dd1691be6e4e04eba122e0b423c4c"><td class="memTemplItemLeft" align="right" valign="top">std::shared_ptr&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classspic_1_1GameObject.html#a169dd1691be6e4e04eba122e0b423c4c">GetComponent</a> () const</td></tr>
 <tr class="memdesc:a169dd1691be6e4e04eba122e0b423c4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the first component of the specified type. Must be a valid subclass of <a class="el" href="classspic_1_1Component.html" title="Base class for all components.">Component</a>.  <a href="classspic_1_1GameObject.html#a169dd1691be6e4e04eba122e0b423c4c">More...</a><br /></td></tr>
@@ -948,6 +951,34 @@ template&lt;class T &gt; </div>
 <p>Remove a child from the children of this <a class="el" href="classspic_1_1GameObject.html" title="Any object which should be represented on screen.">GameObject</a>. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">child</td><td>the child to remove. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section attention"><dt>Attention</dt><dd>This is a symbol shared with the partner group and any changes should be communicated.<br  />
+</dd></dl>
+
+</div>
+</div>
+<a id="ab5e76b21a482fa65f1294fe299964671"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5e76b21a482fa65f1294fe299964671">&#9670;&nbsp;</a></span>RemoveComponent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void spic::GameObject::RemoveComponent </td>
+          <td>(</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classspic_1_1Component.html">Component</a> &gt;&#160;</td>
+          <td class="paramname"><em>component</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Removes a component from a game object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">component</td><td>Reference to the component. </td></tr>
   </table>
   </dd>
 </dl>

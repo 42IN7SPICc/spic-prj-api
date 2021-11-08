@@ -6,7 +6,8 @@ var searchData=
   ['registerkeylistener_104',['RegisterKeyListener',['../namespacespic_1_1Input.html#a93ae9afbfa243431318880416326611e',1,'spic::Input']]],
   ['registermouselistener_105',['RegisterMouseListener',['../namespacespic_1_1Input.html#a65a828f83fcd537e7cca3e29edc82905',1,'spic::Input']]],
   ['removechild_106',['RemoveChild',['../classspic_1_1GameObject.html#ab965b50e4d92b5630203c096cbf5fdd2',1,'spic::GameObject']]],
-  ['render_107',['Render',['../classspic_1_1Camera.html#a5f94f15ac7ce47e42436d138f09dbbfb',1,'spic::Camera']]],
-  ['renderscene_108',['RenderScene',['../classspic_1_1Scene.html#af93b0e10186dff5f5701d5c6262e378e',1,'spic::Scene']]],
-  ['rigidbody_109',['RigidBody',['../classspic_1_1RigidBody.html#a1a87e07b6fa8c21cb27be2e15e9c1989',1,'spic::RigidBody::RigidBody()'],['../classspic_1_1RigidBody.html',1,'spic::RigidBody']]]
+  ['removecomponent_107',['RemoveComponent',['../classspic_1_1GameObject.html#ab5e76b21a482fa65f1294fe299964671',1,'spic::GameObject']]],
+  ['render_108',['Render',['../classspic_1_1Camera.html#a5f94f15ac7ce47e42436d138f09dbbfb',1,'spic::Camera']]],
+  ['renderscene_109',['RenderScene',['../classspic_1_1Scene.html#af93b0e10186dff5f5701d5c6262e378e',1,'spic::Scene']]],
+  ['rigidbody_110',['RigidBody',['../classspic_1_1RigidBody.html#a1a87e07b6fa8c21cb27be2e15e9c1989',1,'spic::RigidBody::RigidBody()'],['../classspic_1_1RigidBody.html',1,'spic::RigidBody']]]
 ];
