@@ -1,1 +1,1 @@
-spic::IMouseListener _listener;
+std::unique_ptr<spic::IMouseListener> _listener;
