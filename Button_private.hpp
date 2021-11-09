@@ -1,3 +1,3 @@
-static void DestoryListener(spic::IMouseListener* listener);
+static void DestroyListener(spic::IMouseListener* listener);
 
-std::unique_ptr<spic::IMouseListener, decltype(DestoryListener)> _listener;
+std::unique_ptr<spic::IMouseListener, decltype(DestroyListener)> _listener;
