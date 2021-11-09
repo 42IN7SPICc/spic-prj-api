@@ -1,2 +1,2 @@
-std::vector<IMouseListener*> _mouseListeners;
-std::vector<IKeyListener*> _keyListeners;
+extern std::vector<IMouseListener*> _mouseListeners;
+extern std::vector<IKeyListener*> _keyListeners;
