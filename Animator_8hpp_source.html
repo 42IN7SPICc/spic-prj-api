@@ -92,17 +92,21 @@ $(function() {
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
 <div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="classspic_1_1Animator.html#a4787f6d5048bd5256adc9c859d8a6515">   55</a></span>&#160;            <span class="keywordtype">void</span> <a class="code" href="classspic_1_1Animator.html#a4787f6d5048bd5256adc9c859d8a6515">FPS</a>(<span class="keywordtype">int</span> newFps);</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            <span class="keywordtype">int</span> fps;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#if __has_include(&quot;Animator_private.hpp&quot;</span>)</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#include &quot;Animator_private.hpp&quot;</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    };</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// ANIMATOR_H_</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#if __has_include(&quot;Animator_public.hpp&quot;</span>)</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#include &quot;Animator_public.hpp&quot;</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            <span class="keywordtype">int</span> fps;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#if __has_include(&quot;Animator_private.hpp&quot;</span>)</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#include &quot;Animator_private.hpp&quot;</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    };</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;}</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// ANIMATOR_H_</span></div>
 <div class="ttc" id="aclassspic_1_1Animator_html"><div class="ttname"><a href="classspic_1_1Animator.html">spic::Animator</a></div><div class="ttdoc">A component which can play animated sequences of sprites.</div><div class="ttdef"><b>Definition:</b> Animator.hpp:19</div></div>
 <div class="ttc" id="aclassspic_1_1Animator_html_a061b63d83ceb2dceec94d6ec0c0f73b4"><div class="ttname"><a href="classspic_1_1Animator.html#a061b63d83ceb2dceec94d6ec0c0f73b4">spic::Animator::Stop</a></div><div class="ttdeci">void Stop()</div><div class="ttdoc">Stop playing the image sequence. Whatever sprite was displayed last will remain shown.</div></div>
 <div class="ttc" id="aclassspic_1_1Animator_html_a1568a4800f79b98bdd8ce3f485810fe2"><div class="ttname"><a href="classspic_1_1Animator.html#a1568a4800f79b98bdd8ce3f485810fe2">spic::Animator::Play</a></div><div class="ttdeci">void Play(bool looping)</div><div class="ttdoc">Start playing the image sequence.</div></div>
