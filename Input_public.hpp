@@ -1,2 +1,2 @@
-extern std::vector<IMouseListener*> _mouseListeners;
-extern std::vector<IKeyListener*> _keyListeners;
+static std::vector<IMouseListener*> _mouseListeners;
+static std::vector<IKeyListener*> _keyListeners;
