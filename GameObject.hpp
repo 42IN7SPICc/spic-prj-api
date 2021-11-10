@@ -231,7 +231,7 @@ namespace spic {
              * @return A weak pointer to the parent.
              * @sharedapi
              */
-            std::weak_ptr<GameObject> Parent();
+            std::weak_ptr<GameObject> Parent() const;
 
             /**
              * The parent of this GameObject.
