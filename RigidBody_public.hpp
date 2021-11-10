@@ -1,3 +1,3 @@
-spic::Point Point(spic::Point point);
+void Point(const spic::Point &point);
 
-spic::Point Point() const;
+spic::Point& Point() const;
