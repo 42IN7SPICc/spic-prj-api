@@ -1,1 +1,1 @@
-bool _started;
+bool _started = false;
