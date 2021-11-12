@@ -66,10 +66,10 @@ $(function() {
 <div class="title">GameObject_private.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;std::weak_ptr&lt;GameObject&gt; _parent;</div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;std::vector&lt;std::shared_ptr&lt;GameObject&gt;&gt; _children;</div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;std::vector&lt;std::shared_ptr&lt;Component&gt;&gt; _components;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<a class="code" href="structspic_1_1Transform.html">spic::Transform</a> _transform;</div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;std::weak_ptr&lt;GameObject&gt; _parent = {};</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;std::vector&lt;std::shared_ptr&lt;GameObject&gt;&gt; _children = {};</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;std::vector&lt;std::shared_ptr&lt;Component&gt;&gt; _components = {};</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<a class="code" href="structspic_1_1Transform.html">spic::Transform</a> _transform = {{0, 0}, 0, 1};</div>
 <div class="ttc" id="astructspic_1_1Transform_html"><div class="ttname"><a href="structspic_1_1Transform.html">spic::Transform</a></div><div class="ttdoc">Instances of this class represent specific 2D transformations.</div><div class="ttdef"><b>Definition:</b> Transform.hpp:11</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

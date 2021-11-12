@@ -68,7 +68,7 @@ $(function() {
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> DestroyListener(<a class="code" href="classspic_1_1IMouseListener.html">spic::IMouseListener</a>* listener);</div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;std::unique_ptr&lt;<a class="code" href="classspic_1_1IMouseListener.html">spic::IMouseListener</a>, decltype(&amp;DestroyListener)&gt; _listener;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;std::unique_ptr&lt;<a class="code" href="classspic_1_1IMouseListener.html">spic::IMouseListener</a>, decltype(&amp;DestroyListener)&gt; _listener = {<span class="keyword">nullptr</span>, &amp;DestroyListener};</div>
 <div class="ttc" id="aclassspic_1_1IMouseListener_html"><div class="ttname"><a href="classspic_1_1IMouseListener.html">spic::IMouseListener</a></div><div class="ttdoc">Interface for objects wanting to respond to mouse events.</div><div class="ttdef"><b>Definition:</b> IMouseListener.hpp:10</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
