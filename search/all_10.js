@@ -2,7 +2,7 @@ var searchData=
 [
   ['debug_111',['Debug',['../namespacespic_1_1Debug.html',1,'spic']]],
   ['input_112',['Input',['../namespacespic_1_1Input.html',1,'spic']]],
-  ['scene_113',['Scene',['../classspic_1_1Scene.html',1,'spic']]],
+  ['scene_113',['Scene',['../classspic_1_1Scene.html#a7882870957d33592689d4b1ee0338f67',1,'spic::Scene::Scene()'],['../classspic_1_1Scene.html',1,'spic::Scene']]],
   ['setcolor_114',['SetColor',['../classspic_1_1Color.html#a78ca32414237f854b08c3b75dba58dbf',1,'spic::Color::SetColor(double red, double green, double blue)'],['../classspic_1_1Color.html#ae8bc097e0575943b14345fdcaf29cf8e',1,'spic::Color::SetColor(double red, double green, double blue, double alpha)']]],
   ['size_115',['Size',['../classspic_1_1Text.html#adbd1abe4606aa24f1b34e94c1a308b3a',1,'spic::Text::Size() const'],['../classspic_1_1Text.html#aff1a68416fe5b84e8c1fc329c63dd0cd',1,'spic::Text::Size(int size)']]],
   ['sortinglayer_116',['SortingLayer',['../classspic_1_1Sprite.html#a2884a2dbe3b667b82139278508a11783',1,'spic::Sprite::SortingLayer(int sortingLayer)'],['../classspic_1_1Sprite.html#af6282045f1472366641d4aece5bed307',1,'spic::Sprite::SortingLayer() const']]],
