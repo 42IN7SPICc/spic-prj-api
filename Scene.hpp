@@ -18,8 +18,6 @@ namespace spic {
      */
     class Scene {
         public:
-            Scene();
-
             /**
              * @brief constructor for scene.
              * @sharedapi
