@@ -1,1 +1,1 @@
-std::weak_ptr<spic::GameObject> _gameObject = {};
+std::weak_ptr<spic::GameObject> _gameObject;

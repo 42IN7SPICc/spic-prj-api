@@ -1,3 +1,3 @@
-std::stack<std::shared_ptr<Scene>> _scenes = {};
-spic::EngineConfig _config = {};
-bool _running = false;
+std::stack<std::shared_ptr<Scene>> _scenes;
+spic::EngineConfig _config;
+bool _running;

@@ -1,1 +1,1 @@
-std::unique_ptr<spic::Point> _point = {};
+std::unique_ptr<spic::Point> _point;
