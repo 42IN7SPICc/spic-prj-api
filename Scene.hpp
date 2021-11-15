@@ -18,6 +18,8 @@ namespace spic {
      */
     class Scene {
         public:
+            Scene();
+
             /**
              * @brief This function is called by a Camera to render the scene on the engine.
              * @spicapi

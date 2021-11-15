@@ -24,6 +24,7 @@ namespace spic {
 #endif
 
     public:
+        Engine();
         static Engine& Instance();
         Engine(const Engine&) = delete;
         Engine& operator=(const Engine&) = delete;

@@ -15,6 +15,11 @@ namespace spic {
      */
     class Collider : public Component {
     public:
+        /**
+         * @brief the constructor
+         * @sharedapi
+         */
+        Collider();
 
         /**
          * @brief Get if the collider is a trigger
