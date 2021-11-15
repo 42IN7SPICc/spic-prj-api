@@ -23,6 +23,10 @@ namespace spic {
              */
             Component();
 
+            /**
+             * @brief destructor for Component
+             * @sharedapi
+             */
             virtual ~Component() = default;
 
             /**
