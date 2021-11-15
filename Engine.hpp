@@ -17,14 +17,13 @@ namespace spic {
     class Engine {
     private:
         static Engine instance;
-        Engine() = default;
+        Engine();
 
 #if __has_include("Engine_private.hpp")
 #include "Engine_private.hpp"
 #endif
 
     public:
-        Engine();
         static Engine& Instance();
         Engine(const Engine&) = delete;
         Engine& operator=(const Engine&) = delete;
