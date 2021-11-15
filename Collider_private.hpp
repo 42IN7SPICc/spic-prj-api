@@ -1,1 +1,1 @@
-bool _isTrigger = false;
+bool _isTrigger;

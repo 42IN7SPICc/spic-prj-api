@@ -17,7 +17,7 @@ namespace spic {
     class Engine {
     private:
         static Engine instance;
-        Engine() = default;
+        Engine();
 
 #if __has_include("Engine_private.hpp")
 #include "Engine_private.hpp"

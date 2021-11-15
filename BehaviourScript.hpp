@@ -13,6 +13,12 @@ namespace spic {
     class BehaviourScript : public Component {
         public:
             /**
+             * @brief constructor for BehaviourScript
+             * @sharedapi
+             */
+            BehaviourScript();
+
+            /**
              * @brief TODO
              * @spicapi
              */

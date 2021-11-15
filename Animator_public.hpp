@@ -1,8 +1,8 @@
-bool Playing = false;
-bool Looping = false;
-int CurrentFrame = 0;
-double FrameTime = 0.0;
-double FrameDuration = 0.0;
+bool Playing;
+bool Looping;
+int CurrentFrame;
+double FrameTime;
+double FrameDuration;
 
 void ActivateFrame(int frameIndex);
 
