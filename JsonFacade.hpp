@@ -5,10 +5,10 @@ namespace spic {
     class JsonFacade {
     public:
         template<class T>
-        T Deserialize(const std::string &jsonString);
+        static T Deserialize(const std::string &jsonString);
 
         template<class T>
-        std::string Serialize(const T &object);
+        static std::string Serialize(const T &object);
     };
 }
 
