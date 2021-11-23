@@ -1,5 +1,5 @@
-#ifndef API_JSONFACADE_H
-#define API_JSONFACADE_H
+#ifndef API_JSONFACADE_HPP
+#define API_JSONFACADE_HPP
 
 namespace spic {
     class JsonFacade {
