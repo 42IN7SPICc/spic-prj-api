@@ -8,7 +8,7 @@ namespace spic {
         T Deserialize(const std::string &jsonString);
 
         template<class T>
-        std::string Deserialize(const T &object);
+        std::string Serialize(const T &object);
     };
 }
 
