@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['_7ecomponent_142',['~Component',['../classspic_1_1Component.html#a3507a84730510403c771bbb1b4e533c3',1,'spic::Component']]]
+  ['yellow_142',['yellow',['../classspic_1_1Color.html#acbf3cb80e1a31b2251c8abc8ee29fd11',1,'spic::Color']]]
 ];

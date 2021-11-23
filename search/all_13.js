@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['volume_135',['Volume',['../classspic_1_1AudioSource.html#aeb376a3318e0b36fcfd94574156fe25e',1,'spic::AudioSource::Volume() const'],['../classspic_1_1AudioSource.html#a547888b92f72bb44a93164f781786f40',1,'spic::AudioSource::Volume(double newVolume)']]]
+  ['uiobject_133',['UIObject',['../classspic_1_1UIObject.html',1,'spic::UIObject'],['../classspic_1_1UIObject.html#a83c8b76ba8a61352945cb56c67af7d0b',1,'spic::UIObject::UIObject()']]],
+  ['unregisterkeylistener_134',['UnregisterKeyListener',['../namespacespic_1_1Input.html#ae2a57d8f3682e8015300924f2f0c899e',1,'spic::Input']]],
+  ['unregistermouselistener_135',['UnregisterMouseListener',['../namespacespic_1_1Input.html#a660270ee7a7749dafbb550d62015123c',1,'spic::Input']]]
 ];
