@@ -14,4 +14,8 @@ namespace spic {
     };
 }
 
+#if __has_include("JsonFacade_templates.hpp")
+#include "JsonFacade_templates.hpp"
+#endif
+
 #endif
