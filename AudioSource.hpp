@@ -53,6 +53,9 @@ namespace spic {
              */
             void Volume(double newVolume);
 
+#if __has_include("AudioSource_public.hpp")
+#include "AudioSource_public.hpp"
+#endif
         private:
             /**
              * @brief Path to a locally stored audio file.
