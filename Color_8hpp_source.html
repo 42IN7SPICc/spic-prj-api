@@ -114,38 +114,44 @@ $(function() {
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160; </div>
 <div class="line"><a name="l00161"></a><span class="lineno"><a class="line" href="classspic_1_1Color.html#a0909b8c7bf2b4f6aecd41e3c45e8621a">  161</a></span>&#160;            <span class="keywordtype">double</span> <a class="code" href="classspic_1_1Color.html#a0909b8c7bf2b4f6aecd41e3c45e8621a">A</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160; </div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;            <span class="keywordtype">double</span> r;</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;            <span class="keywordtype">double</span> g;</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;            <span class="keywordtype">double</span> b;</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;            <span class="keywordtype">double</span> a;</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160; </div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;            <span class="keyword">static</span> <a class="code" href="classspic_1_1Color.html">Color</a> _white;</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;            <span class="keyword">static</span> <a class="code" href="classspic_1_1Color.html">Color</a> _red;</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;            <span class="keyword">static</span> <a class="code" href="classspic_1_1Color.html">Color</a> _green;</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;            <span class="keyword">static</span> <a class="code" href="classspic_1_1Color.html">Color</a> _blue;</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;            <span class="keyword">static</span> <a class="code" href="classspic_1_1Color.html">Color</a> _cyan;</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;            <span class="keyword">static</span> <a class="code" href="classspic_1_1Color.html">Color</a> _magenta;</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;            <span class="keyword">static</span> <a class="code" href="classspic_1_1Color.html">Color</a> _yellow;</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;            <span class="keyword">static</span> <a class="code" href="classspic_1_1Color.html">Color</a> _black;</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;            <span class="keyword">static</span> <a class="code" href="classspic_1_1Color.html">Color</a> _purple;</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;            <span class="keyword">static</span> <a class="code" href="classspic_1_1Color.html">Color</a> _lime;</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;            <span class="keyword">static</span> <a class="code" href="classspic_1_1Color.html">Color</a> _orange;</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;            <span class="keyword">static</span> <a class="code" href="classspic_1_1Color.html">Color</a> _transparent;</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;            <span class="comment">// ... more standard color here</span></div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    };</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160; </div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;}</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160; </div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// COLOR_H_</span></div>
+<div class="line"><a name="l00168"></a><span class="lineno"><a class="line" href="classspic_1_1Color.html#a850b6a7ad769fe40713a95902eb55919">  168</a></span>&#160;            <span class="keywordtype">bool</span> <a class="code" href="classspic_1_1Color.html#a850b6a7ad769fe40713a95902eb55919">operator==</a>(<span class="keyword">const</span> <a class="code" href="classspic_1_1Color.html">Color</a>&amp; rhs) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160; </div>
+<div class="line"><a name="l00175"></a><span class="lineno"><a class="line" href="classspic_1_1Color.html#a6103f3e003f28d3c33adda97e96ae951">  175</a></span>&#160;            <span class="keywordtype">bool</span> <a class="code" href="classspic_1_1Color.html#a6103f3e003f28d3c33adda97e96ae951">operator!=</a>(<span class="keyword">const</span> <a class="code" href="classspic_1_1Color.html">Color</a>&amp; rhs) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160; </div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;            <span class="keywordtype">double</span> r;</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;            <span class="keywordtype">double</span> g;</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;            <span class="keywordtype">double</span> b;</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;            <span class="keywordtype">double</span> a;</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160; </div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;            <span class="keyword">static</span> <a class="code" href="classspic_1_1Color.html">Color</a> _white;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;            <span class="keyword">static</span> <a class="code" href="classspic_1_1Color.html">Color</a> _red;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;            <span class="keyword">static</span> <a class="code" href="classspic_1_1Color.html">Color</a> _green;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;            <span class="keyword">static</span> <a class="code" href="classspic_1_1Color.html">Color</a> _blue;</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;            <span class="keyword">static</span> <a class="code" href="classspic_1_1Color.html">Color</a> _cyan;</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;            <span class="keyword">static</span> <a class="code" href="classspic_1_1Color.html">Color</a> _magenta;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;            <span class="keyword">static</span> <a class="code" href="classspic_1_1Color.html">Color</a> _yellow;</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;            <span class="keyword">static</span> <a class="code" href="classspic_1_1Color.html">Color</a> _black;</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;            <span class="keyword">static</span> <a class="code" href="classspic_1_1Color.html">Color</a> _purple;</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;            <span class="keyword">static</span> <a class="code" href="classspic_1_1Color.html">Color</a> _lime;</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;            <span class="keyword">static</span> <a class="code" href="classspic_1_1Color.html">Color</a> _orange;</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;            <span class="keyword">static</span> <a class="code" href="classspic_1_1Color.html">Color</a> _transparent;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;            <span class="comment">// ... more standard color here</span></div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    };</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160; </div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;}</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160; </div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// COLOR_H_</span></div>
 <div class="ttc" id="aclassspic_1_1Color_html"><div class="ttname"><a href="classspic_1_1Color.html">spic::Color</a></div><div class="ttdoc">Color represents a red-green-blue color with alpha.</div><div class="ttdef"><b>Definition:</b> Color.hpp:10</div></div>
 <div class="ttc" id="aclassspic_1_1Color_html_a07c53340f952c25f9fbab2147e770118"><div class="ttname"><a href="classspic_1_1Color.html#a07c53340f952c25f9fbab2147e770118">spic::Color::orange</a></div><div class="ttdeci">static const Color &amp; orange()</div><div class="ttdoc">One of the standard colors (read-only): orange.</div></div>
 <div class="ttc" id="aclassspic_1_1Color_html_a0909b8c7bf2b4f6aecd41e3c45e8621a"><div class="ttname"><a href="classspic_1_1Color.html#a0909b8c7bf2b4f6aecd41e3c45e8621a">spic::Color::A</a></div><div class="ttdeci">double A() const</div><div class="ttdoc">The alpha part of the color.</div></div>
 <div class="ttc" id="aclassspic_1_1Color_html_a30f662e71aeece6df544e7c140798e78"><div class="ttname"><a href="classspic_1_1Color.html#a30f662e71aeece6df544e7c140798e78">spic::Color::black</a></div><div class="ttdeci">static const Color &amp; black()</div><div class="ttdoc">One of the standard colors (read-only): black.</div><div class="ttdef"><b>Definition:</b> Color.hpp:85</div></div>
 <div class="ttc" id="aclassspic_1_1Color_html_a36b3452c6316c74a17316d0db9262f51"><div class="ttname"><a href="classspic_1_1Color.html#a36b3452c6316c74a17316d0db9262f51">spic::Color::Color</a></div><div class="ttdeci">Color(double red, double green, double blue)</div><div class="ttdoc">Constructor, accepting an rgb value.</div></div>
 <div class="ttc" id="aclassspic_1_1Color_html_a3dc98904d37b8eb13bcd3fdda7084371"><div class="ttname"><a href="classspic_1_1Color.html#a3dc98904d37b8eb13bcd3fdda7084371">spic::Color::purple</a></div><div class="ttdeci">static const Color &amp; purple()</div><div class="ttdoc">One of the standard colors (read-only): purple.</div></div>
+<div class="ttc" id="aclassspic_1_1Color_html_a6103f3e003f28d3c33adda97e96ae951"><div class="ttname"><a href="classspic_1_1Color.html#a6103f3e003f28d3c33adda97e96ae951">spic::Color::operator!=</a></div><div class="ttdeci">bool operator!=(const Color &amp;rhs) const</div><div class="ttdoc">Compare two instances of a color.</div></div>
 <div class="ttc" id="aclassspic_1_1Color_html_a74d06b658618c2533d6fdd32f7f855aa"><div class="ttname"><a href="classspic_1_1Color.html#a74d06b658618c2533d6fdd32f7f855aa">spic::Color::green</a></div><div class="ttdeci">static const Color &amp; green()</div><div class="ttdoc">One of the standard colors (read-only): green.</div><div class="ttdef"><b>Definition:</b> Color.hpp:50</div></div>
 <div class="ttc" id="aclassspic_1_1Color_html_a78ca32414237f854b08c3b75dba58dbf"><div class="ttname"><a href="classspic_1_1Color.html#a78ca32414237f854b08c3b75dba58dbf">spic::Color::SetColor</a></div><div class="ttdeci">void SetColor(double red, double green, double blue)</div><div class="ttdoc">Set the RGB values of the color.</div></div>
+<div class="ttc" id="aclassspic_1_1Color_html_a850b6a7ad769fe40713a95902eb55919"><div class="ttname"><a href="classspic_1_1Color.html#a850b6a7ad769fe40713a95902eb55919">spic::Color::operator==</a></div><div class="ttdeci">bool operator==(const Color &amp;rhs) const</div><div class="ttdoc">Compare two instances of a color.</div></div>
 <div class="ttc" id="aclassspic_1_1Color_html_a8637adbaa095b057535bbe725ce6416a"><div class="ttname"><a href="classspic_1_1Color.html#a8637adbaa095b057535bbe725ce6416a">spic::Color::R</a></div><div class="ttdeci">double R() const</div><div class="ttdoc">The red part of the color.</div></div>
 <div class="ttc" id="aclassspic_1_1Color_html_aa4fc43d370663097714ad8da4655d2d9"><div class="ttname"><a href="classspic_1_1Color.html#aa4fc43d370663097714ad8da4655d2d9">spic::Color::blue</a></div><div class="ttdeci">static const Color &amp; blue()</div><div class="ttdoc">One of the standard colors (read-only): blue.</div><div class="ttdef"><b>Definition:</b> Color.hpp:57</div></div>
 <div class="ttc" id="aclassspic_1_1Color_html_aa6629ccd6eadcb2d83a845a0eb854c79"><div class="ttname"><a href="classspic_1_1Color.html#aa6629ccd6eadcb2d83a845a0eb854c79">spic::Color::B</a></div><div class="ttdeci">double B() const</div><div class="ttdoc">The blue part of the color.</div></div>

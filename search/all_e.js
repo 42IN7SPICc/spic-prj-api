@@ -13,8 +13,8 @@ var searchData=
   ['ontriggerstay2d_91',['OnTriggerStay2D',['../classspic_1_1BehaviourScript.html#a3571c167cb291be45c8f760a4804b0c6',1,'spic::BehaviourScript']]],
   ['onupdate_92',['OnUpdate',['../classspic_1_1BehaviourScript.html#a6e2d489237a308ace55b84ab9e575972',1,'spic::BehaviourScript']]],
   ['operator_20bool_93',['operator bool',['../classspic_1_1GameObject.html#aa33bbea63f11176ca1f0a70d0d69eb20',1,'spic::GameObject']]],
-  ['operator_21_3d_94',['operator!=',['../classspic_1_1GameObject.html#a4bfd6660358330fc462508f5fe53e7de',1,'spic::GameObject']]],
-  ['operator_3d_3d_95',['operator==',['../classspic_1_1GameObject.html#a5b5620e06658414b6335220d497db28d',1,'spic::GameObject']]],
+  ['operator_21_3d_94',['operator!=',['../classspic_1_1Color.html#a6103f3e003f28d3c33adda97e96ae951',1,'spic::Color::operator!=()'],['../classspic_1_1GameObject.html#a4bfd6660358330fc462508f5fe53e7de',1,'spic::GameObject::operator!=()']]],
+  ['operator_3d_3d_95',['operator==',['../classspic_1_1Color.html#a850b6a7ad769fe40713a95902eb55919',1,'spic::Color::operator==()'],['../classspic_1_1GameObject.html#a5b5620e06658414b6335220d497db28d',1,'spic::GameObject::operator==()']]],
   ['orange_96',['orange',['../classspic_1_1Color.html#a07c53340f952c25f9fbab2147e770118',1,'spic::Color']]],
   ['orderinlayer_97',['OrderInLayer',['../classspic_1_1Sprite.html#a93ab4a0271beb6fdb147fcab5ed2e426',1,'spic::Sprite::OrderInLayer(int orderInLayer)'],['../classspic_1_1Sprite.html#a2f323eb9a8d63df845de8054b160955c',1,'spic::Sprite::OrderInLayer() const']]]
 ];
