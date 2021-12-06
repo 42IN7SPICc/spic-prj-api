@@ -160,6 +160,20 @@ namespace spic {
              */
             double A() const;
 
+            /**
+             * @brief Compare two instances of a color.
+             * @param rhs The instance to compare to this.
+             * @return Whether the two color are the same.
+             */
+            bool operator==(const Color& rhs) const;
+
+            /**
+             * @brief Compare two instances of a color.
+             * @param rhs The instance to compare to this.
+             * @return Whether the two color are not the same.
+             */
+            bool operator!=(const Color& rhs) const;
+
         private:
             double r;
             double g;
