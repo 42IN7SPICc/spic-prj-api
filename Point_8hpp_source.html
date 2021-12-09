@@ -69,17 +69,30 @@ $(function() {
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef POINT_H_</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define POINT_H_</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">namespace </span>spic {</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="structspic_1_1Point.html">   10</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structspic_1_1Point.html">Point</a> {</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        <span class="keywordtype">double</span> x;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        <span class="keywordtype">double</span> y;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    };</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">namespace </span>spic</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="structspic_1_1Point.html">   10</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structspic_1_1Point.html">Point</a></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    {</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        <span class="keywordtype">double</span> x;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        <span class="keywordtype">double</span> y;</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;}</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// POINT_H_</span></div>
-<div class="ttc" id="astructspic_1_1Point_html"><div class="ttname"><a href="structspic_1_1Point.html">spic::Point</a></div><div class="ttdoc">Struct representing both a 2D point and a 2D vector.</div><div class="ttdef"><b>Definition:</b> Point.hpp:10</div></div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="structspic_1_1Point.html#a9969a56213d17915e2d7df9f7acb920b">   22</a></span>&#160;        <span class="keyword">friend</span> <a class="code" href="structspic_1_1Point.html">Point</a> <a class="code" href="structspic_1_1Point.html#a9969a56213d17915e2d7df9f7acb920b">operator+</a>(<a class="code" href="structspic_1_1Point.html">Point</a> lhs, <span class="keyword">const</span> <a class="code" href="structspic_1_1Point.html">Point</a>&amp; rhs);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="structspic_1_1Point.html#a4fda359f8502affff50d013da9d26203">   30</a></span>&#160;        <a class="code" href="structspic_1_1Point.html">Point</a>&amp; <a class="code" href="structspic_1_1Point.html#a4fda359f8502affff50d013da9d26203">operator+=</a>(<span class="keyword">const</span> <a class="code" href="structspic_1_1Point.html">Point</a>&amp; rhs);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="structspic_1_1Point.html#affe5cbcd87393b6bacc4f7c5878ddf09">   39</a></span>&#160;        <span class="keyword">friend</span> <a class="code" href="structspic_1_1Point.html">Point</a> <a class="code" href="structspic_1_1Point.html#affe5cbcd87393b6bacc4f7c5878ddf09">operator-</a>(<a class="code" href="structspic_1_1Point.html">Point</a> lhs, <span class="keyword">const</span> <a class="code" href="structspic_1_1Point.html">Point</a>&amp; rhs);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="structspic_1_1Point.html#a35f1f2f8f9208f931958b0690e6e8c8c">   47</a></span>&#160;        <a class="code" href="structspic_1_1Point.html">Point</a>&amp; <a class="code" href="structspic_1_1Point.html#a35f1f2f8f9208f931958b0690e6e8c8c">operator-=</a>(<span class="keyword">const</span> <a class="code" href="structspic_1_1Point.html">Point</a>&amp; rhs);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    };</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// POINT_H_</span></div>
+<div class="ttc" id="astructspic_1_1Point_html"><div class="ttname"><a href="structspic_1_1Point.html">spic::Point</a></div><div class="ttdoc">Struct representing both a 2D point and a 2D vector.</div><div class="ttdef"><b>Definition:</b> Point.hpp:11</div></div>
+<div class="ttc" id="astructspic_1_1Point_html_a35f1f2f8f9208f931958b0690e6e8c8c"><div class="ttname"><a href="structspic_1_1Point.html#a35f1f2f8f9208f931958b0690e6e8c8c">spic::Point::operator-=</a></div><div class="ttdeci">Point &amp; operator-=(const Point &amp;rhs)</div><div class="ttdoc">Subtract one Point to this.</div></div>
+<div class="ttc" id="astructspic_1_1Point_html_a4fda359f8502affff50d013da9d26203"><div class="ttname"><a href="structspic_1_1Point.html#a4fda359f8502affff50d013da9d26203">spic::Point::operator+=</a></div><div class="ttdeci">Point &amp; operator+=(const Point &amp;rhs)</div><div class="ttdoc">Add one Point to this.</div></div>
+<div class="ttc" id="astructspic_1_1Point_html_a9969a56213d17915e2d7df9f7acb920b"><div class="ttname"><a href="structspic_1_1Point.html#a9969a56213d17915e2d7df9f7acb920b">spic::Point::operator+</a></div><div class="ttdeci">friend Point operator+(Point lhs, const Point &amp;rhs)</div><div class="ttdoc">Operator to add two points.</div></div>
+<div class="ttc" id="astructspic_1_1Point_html_affe5cbcd87393b6bacc4f7c5878ddf09"><div class="ttname"><a href="structspic_1_1Point.html#affe5cbcd87393b6bacc4f7c5878ddf09">spic::Point::operator-</a></div><div class="ttdeci">friend Point operator-(Point lhs, const Point &amp;rhs)</div><div class="ttdoc">Operator to subtract two points.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
