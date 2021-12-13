@@ -9,7 +9,9 @@
 #endif
 
 namespace spic {
-
+    /**
+     * @brief Base class for script running in the game.
+     */
     class BehaviourScript : public Component {
         public:
             /**
