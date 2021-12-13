@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>SPICPRJ Engine: BehaviourScript.hpp Source File</title>
+<title>SPICPRJ API: BehaviourScript.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">SPICPRJ Engine
+   <div id="projectname">SPICPRJ API
    &#160;<span id="projectnumber">1</span>
    </div>
   </td>
@@ -77,35 +77,34 @@ $(function() {
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span>spic {</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="classspic_1_1BehaviourScript.html">   13</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classspic_1_1BehaviourScript.html">BehaviourScript</a> : <span class="keyword">public</span> <a class="code" href="classspic_1_1Component.html">Component</a> {</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classspic_1_1BehaviourScript.html#ae0d2a2669740ca7a22713c51d3be3f3d">   19</a></span>&#160;            <a class="code" href="classspic_1_1BehaviourScript.html#ae0d2a2669740ca7a22713c51d3be3f3d">BehaviourScript</a>();</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classspic_1_1BehaviourScript.html#a15da06506b3f3bb746f2515f29f08b77">   25</a></span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classspic_1_1BehaviourScript.html#a15da06506b3f3bb746f2515f29f08b77">OnStart</a>();</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classspic_1_1BehaviourScript.html#a6e2d489237a308ace55b84ab9e575972">   31</a></span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classspic_1_1BehaviourScript.html#a6e2d489237a308ace55b84ab9e575972">OnUpdate</a>();</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classspic_1_1BehaviourScript.html#a0e69d42ef79061b081b09f8916eb7261">   38</a></span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classspic_1_1BehaviourScript.html#a0e69d42ef79061b081b09f8916eb7261">OnTriggerEnter2D</a>(<span class="keyword">const</span> <a class="code" href="classspic_1_1Collider.html">Collider</a>&amp; collider);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classspic_1_1BehaviourScript.html#ada9fb1667b4ecd97ea48d08fc58894a4">   45</a></span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classspic_1_1BehaviourScript.html#ada9fb1667b4ecd97ea48d08fc58894a4">OnTriggerExit2D</a>(<span class="keyword">const</span> <a class="code" href="classspic_1_1Collider.html">Collider</a>&amp; collider);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="classspic_1_1BehaviourScript.html#a3571c167cb291be45c8f760a4804b0c6">   52</a></span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classspic_1_1BehaviourScript.html#a3571c167cb291be45c8f760a4804b0c6">OnTriggerStay2D</a>(<span class="keyword">const</span> <a class="code" href="classspic_1_1Collider.html">Collider</a>&amp; collider);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="classspic_1_1BehaviourScript.html#a488f2faed701bf95f373aa5c0f0f4e15">   59</a></span>&#160;            <span class="keywordtype">void</span> <a class="code" href="classspic_1_1BehaviourScript.html#a488f2faed701bf95f373aa5c0f0f4e15">Started</a>(<span class="keywordtype">bool</span> started);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="classspic_1_1BehaviourScript.html#afe22f4c3c743240c30563002b1ab08b7">   66</a></span>&#160;            <span class="keywordtype">bool</span> <a class="code" href="classspic_1_1BehaviourScript.html#afe22f4c3c743240c30563002b1ab08b7">Started</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#if __has_include(&quot;BehaviourScript_private.hpp&quot;</span>)</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#include &quot;BehaviourScript_private.hpp&quot;</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    };</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;}</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="classspic_1_1BehaviourScript.html">   15</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classspic_1_1BehaviourScript.html">BehaviourScript</a> : <span class="keyword">public</span> <a class="code" href="classspic_1_1Component.html">Component</a> {</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="classspic_1_1BehaviourScript.html#ae0d2a2669740ca7a22713c51d3be3f3d">   21</a></span>&#160;            <a class="code" href="classspic_1_1BehaviourScript.html#ae0d2a2669740ca7a22713c51d3be3f3d">BehaviourScript</a>();</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classspic_1_1BehaviourScript.html#a15da06506b3f3bb746f2515f29f08b77">   27</a></span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classspic_1_1BehaviourScript.html#a15da06506b3f3bb746f2515f29f08b77">OnStart</a>();</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classspic_1_1BehaviourScript.html#a6e2d489237a308ace55b84ab9e575972">   33</a></span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classspic_1_1BehaviourScript.html#a6e2d489237a308ace55b84ab9e575972">OnUpdate</a>();</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classspic_1_1BehaviourScript.html#a0e69d42ef79061b081b09f8916eb7261">   40</a></span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classspic_1_1BehaviourScript.html#a0e69d42ef79061b081b09f8916eb7261">OnTriggerEnter2D</a>(<span class="keyword">const</span> <a class="code" href="classspic_1_1Collider.html">Collider</a>&amp; collider);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="classspic_1_1BehaviourScript.html#ada9fb1667b4ecd97ea48d08fc58894a4">   47</a></span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classspic_1_1BehaviourScript.html#ada9fb1667b4ecd97ea48d08fc58894a4">OnTriggerExit2D</a>(<span class="keyword">const</span> <a class="code" href="classspic_1_1Collider.html">Collider</a>&amp; collider);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="classspic_1_1BehaviourScript.html#a3571c167cb291be45c8f760a4804b0c6">   54</a></span>&#160;            <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classspic_1_1BehaviourScript.html#a3571c167cb291be45c8f760a4804b0c6">OnTriggerStay2D</a>(<span class="keyword">const</span> <a class="code" href="classspic_1_1Collider.html">Collider</a>&amp; collider);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="classspic_1_1BehaviourScript.html#a488f2faed701bf95f373aa5c0f0f4e15">   61</a></span>&#160;            <span class="keywordtype">void</span> <a class="code" href="classspic_1_1BehaviourScript.html#a488f2faed701bf95f373aa5c0f0f4e15">Started</a>(<span class="keywordtype">bool</span> started);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="classspic_1_1BehaviourScript.html#afe22f4c3c743240c30563002b1ab08b7">   68</a></span>&#160;            <span class="keywordtype">bool</span> <a class="code" href="classspic_1_1BehaviourScript.html#afe22f4c3c743240c30563002b1ab08b7">Started</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#if __has_include(&quot;BehaviourScript_private.hpp&quot;</span>)</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#include &quot;BehaviourScript_private.hpp&quot;</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    };</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// BEHAVIOURSCRIPT_H_</span></div>
-<div class="ttc" id="aclassspic_1_1BehaviourScript_html"><div class="ttname"><a href="classspic_1_1BehaviourScript.html">spic::BehaviourScript</a></div><div class="ttdef"><b>Definition:</b> BehaviourScript.hpp:13</div></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;}</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// BEHAVIOURSCRIPT_H_</span></div>
+<div class="ttc" id="aclassspic_1_1BehaviourScript_html"><div class="ttname"><a href="classspic_1_1BehaviourScript.html">spic::BehaviourScript</a></div><div class="ttdoc">Base class for script running in the game.</div><div class="ttdef"><b>Definition:</b> BehaviourScript.hpp:15</div></div>
 <div class="ttc" id="aclassspic_1_1BehaviourScript_html_a0e69d42ef79061b081b09f8916eb7261"><div class="ttname"><a href="classspic_1_1BehaviourScript.html#a0e69d42ef79061b081b09f8916eb7261">spic::BehaviourScript::OnTriggerEnter2D</a></div><div class="ttdeci">virtual void OnTriggerEnter2D(const Collider &amp;collider)</div><div class="ttdoc">Sent when another object enters a trigger collider attached to this object (2D physics only).</div></div>
 <div class="ttc" id="aclassspic_1_1BehaviourScript_html_a15da06506b3f3bb746f2515f29f08b77"><div class="ttname"><a href="classspic_1_1BehaviourScript.html#a15da06506b3f3bb746f2515f29f08b77">spic::BehaviourScript::OnStart</a></div><div class="ttdeci">virtual void OnStart()</div><div class="ttdoc">TODO.</div></div>
 <div class="ttc" id="aclassspic_1_1BehaviourScript_html_a3571c167cb291be45c8f760a4804b0c6"><div class="ttname"><a href="classspic_1_1BehaviourScript.html#a3571c167cb291be45c8f760a4804b0c6">spic::BehaviourScript::OnTriggerStay2D</a></div><div class="ttdeci">virtual void OnTriggerStay2D(const Collider &amp;collider)</div><div class="ttdoc">Sent each frame where another object is within a trigger collider attached to this object (2D physics...</div></div>

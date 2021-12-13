@@ -51,7 +51,7 @@
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a xlink:href="classspic_1_1BehaviourScript.html" target="_top" xlink:title=" ">
+<g id="a_node4"><a xlink:href="classspic_1_1BehaviourScript.html" target="_top" xlink:title="Base class for script running in the game.">
 <polygon fill="white" stroke="black" points="125,-114.5 125,-133.5 233,-133.5 233,-114.5 125,-114.5"/>
 <text text-anchor="middle" x="179" y="-121.5" font-family="Helvetica,sans-Serif" font-size="10.00">spic::BehaviourScript</text>
 </a>

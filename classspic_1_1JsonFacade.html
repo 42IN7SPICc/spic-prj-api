@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>SPICPRJ Engine: spic::JsonFacade Class Reference</title>
+<title>SPICPRJ API: spic::JsonFacade Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">SPICPRJ Engine
+   <div id="projectname">SPICPRJ API
    &#160;<span id="projectnumber">1</span>
    </div>
   </td>
@@ -73,18 +73,100 @@ $(function() {
 <div class="title">spic::JsonFacade Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Class for serializing and desrializing json files.  
+ <a href="classspic_1_1JsonFacade.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="JsonFacade_8hpp_source.html">JsonFacade.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a0bf30f87280c950a207ff8f9d1ef9f5e"><td class="memTemplParams" colspan="2"><a id="a0bf30f87280c950a207ff8f9d1ef9f5e"></a>
-template&lt;class T &gt; </td></tr>
-<tr class="memitem:a0bf30f87280c950a207ff8f9d1ef9f5e"><td class="memTemplItemLeft" align="right" valign="top">static T&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Deserialize</b> (const std::string &amp;jsonString)</td></tr>
+<tr class="memitem:a0bf30f87280c950a207ff8f9d1ef9f5e"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a0bf30f87280c950a207ff8f9d1ef9f5e"><td class="memTemplItemLeft" align="right" valign="top">static T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classspic_1_1JsonFacade.html#a0bf30f87280c950a207ff8f9d1ef9f5e">Deserialize</a> (const std::string &amp;jsonString)</td></tr>
+<tr class="memdesc:a0bf30f87280c950a207ff8f9d1ef9f5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deserialize a json string to a given object.  <a href="classspic_1_1JsonFacade.html#a0bf30f87280c950a207ff8f9d1ef9f5e">More...</a><br /></td></tr>
 <tr class="separator:a0bf30f87280c950a207ff8f9d1ef9f5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad25bc54f89b287a29f64236d6dc18ccd"><td class="memTemplParams" colspan="2"><a id="ad25bc54f89b287a29f64236d6dc18ccd"></a>
-template&lt;class T &gt; </td></tr>
-<tr class="memitem:ad25bc54f89b287a29f64236d6dc18ccd"><td class="memTemplItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Serialize</b> (const T &amp;object)</td></tr>
+<tr class="memitem:ad25bc54f89b287a29f64236d6dc18ccd"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:ad25bc54f89b287a29f64236d6dc18ccd"><td class="memTemplItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classspic_1_1JsonFacade.html#ad25bc54f89b287a29f64236d6dc18ccd">Serialize</a> (const T &amp;object)</td></tr>
+<tr class="memdesc:ad25bc54f89b287a29f64236d6dc18ccd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialize a given object to a json string.  <a href="classspic_1_1JsonFacade.html#ad25bc54f89b287a29f64236d6dc18ccd">More...</a><br /></td></tr>
 <tr class="separator:ad25bc54f89b287a29f64236d6dc18ccd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Class for serializing and desrializing json files. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a0bf30f87280c950a207ff8f9d1ef9f5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0bf30f87280c950a207ff8f9d1ef9f5e">&#9670;&nbsp;</a></span>Deserialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static T spic::JsonFacade::Deserialize </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>jsonString</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Deserialize a json string to a given object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">jsonString</td><td>The string containing the json. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The object containing the values from the json. </dd></dl>
+
+</div>
+</div>
+<a id="ad25bc54f89b287a29f64236d6dc18ccd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad25bc54f89b287a29f64236d6dc18ccd">&#9670;&nbsp;</a></span>Serialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static std::string spic::JsonFacade::Serialize </td>
+          <td>(</td>
+          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramname"><em>object</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Serialize a given object to a json string. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">object</td><td>The object containing the data. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The json string containing the values from the object. </dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="JsonFacade_8hpp_source.html">JsonFacade.hpp</a></li>
 </ul>
