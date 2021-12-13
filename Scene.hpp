@@ -25,6 +25,12 @@ namespace spic {
             Scene();
 
             /**
+             * @brief destructor for scene.
+             * @sharedapi
+             */
+            virtual ~Scene() = default;
+
+            /**
              * @brief This function is called by a Camera to render the scene on the engine.
              * @spicapi
              */
