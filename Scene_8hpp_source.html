@@ -84,20 +84,23 @@ $(function() {
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classspic_1_1Scene.html#a7882870957d33592689d4b1ee0338f67">   25</a></span>&#160;            <a class="code" href="classspic_1_1Scene.html#a7882870957d33592689d4b1ee0338f67">Scene</a>();</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classspic_1_1Scene.html#af93b0e10186dff5f5701d5c6262e378e">   31</a></span>&#160;            <span class="keywordtype">void</span> <a class="code" href="classspic_1_1Scene.html#af93b0e10186dff5f5701d5c6262e378e">RenderScene</a>();</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classspic_1_1Scene.html#a3e22ad7227f9d19e1b9ac64dc6bb095c">   31</a></span>&#160;            <span class="keyword">virtual</span> <a class="code" href="classspic_1_1Scene.html#a3e22ad7227f9d19e1b9ac64dc6bb095c">~Scene</a>() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classspic_1_1Scene.html#a62060ae4d93ce43a45874cc49e539198">   37</a></span>&#160;            std::vector&lt;std::shared_ptr&lt;GameObject&gt;&gt;&amp; <a class="code" href="classspic_1_1Scene.html#a62060ae4d93ce43a45874cc49e539198">Contents</a>();</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classspic_1_1Scene.html#af93b0e10186dff5f5701d5c6262e378e">   37</a></span>&#160;            <span class="keywordtype">void</span> <a class="code" href="classspic_1_1Scene.html#af93b0e10186dff5f5701d5c6262e378e">RenderScene</a>();</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#if __has_include(&quot;Scene_private.hpp&quot;</span>)</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#include &quot;Scene_private.hpp&quot;</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    };</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classspic_1_1Scene.html#a62060ae4d93ce43a45874cc49e539198">   43</a></span>&#160;            std::vector&lt;std::shared_ptr&lt;GameObject&gt;&gt;&amp; <a class="code" href="classspic_1_1Scene.html#a62060ae4d93ce43a45874cc49e539198">Contents</a>();</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// SCENE_H_</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#if __has_include(&quot;Scene_private.hpp&quot;</span>)</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#include &quot;Scene_private.hpp&quot;</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    };</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// SCENE_H_</span></div>
 <div class="ttc" id="aclassspic_1_1Scene_html"><div class="ttname"><a href="classspic_1_1Scene.html">spic::Scene</a></div><div class="ttdoc">Class representing a scene which can be rendered by the Camera.</div><div class="ttdef"><b>Definition:</b> Scene.hpp:19</div></div>
+<div class="ttc" id="aclassspic_1_1Scene_html_a3e22ad7227f9d19e1b9ac64dc6bb095c"><div class="ttname"><a href="classspic_1_1Scene.html#a3e22ad7227f9d19e1b9ac64dc6bb095c">spic::Scene::~Scene</a></div><div class="ttdeci">virtual ~Scene()=default</div><div class="ttdoc">destructor for scene.</div></div>
 <div class="ttc" id="aclassspic_1_1Scene_html_a62060ae4d93ce43a45874cc49e539198"><div class="ttname"><a href="classspic_1_1Scene.html#a62060ae4d93ce43a45874cc49e539198">spic::Scene::Contents</a></div><div class="ttdeci">std::vector&lt; std::shared_ptr&lt; GameObject &gt; &gt; &amp; Contents()</div><div class="ttdoc">This property contains all the Game Object that are contained in this scene.</div></div>
 <div class="ttc" id="aclassspic_1_1Scene_html_a7882870957d33592689d4b1ee0338f67"><div class="ttname"><a href="classspic_1_1Scene.html#a7882870957d33592689d4b1ee0338f67">spic::Scene::Scene</a></div><div class="ttdeci">Scene()</div><div class="ttdoc">constructor for scene.</div></div>
 <div class="ttc" id="aclassspic_1_1Scene_html_af93b0e10186dff5f5701d5c6262e378e"><div class="ttname"><a href="classspic_1_1Scene.html#af93b0e10186dff5f5701d5c6262e378e">spic::Scene::RenderScene</a></div><div class="ttdeci">void RenderScene()</div><div class="ttdoc">This function is called by a Camera to render the scene on the engine.</div></div>
