@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['_7ecomponent_149',['~Component',['../classspic_1_1Component.html#a3507a84730510403c771bbb1b4e533c3',1,'spic::Component']]],
-  ['_7escene_150',['~Scene',['../classspic_1_1Scene.html#a3e22ad7227f9d19e1b9ac64dc6bb095c',1,'spic::Scene']]]
+  ['_7ecomponent_150',['~Component',['../classspic_1_1Component.html#a3507a84730510403c771bbb1b4e533c3',1,'spic::Component']]],
+  ['_7escene_151',['~Scene',['../classspic_1_1Scene.html#a3e22ad7227f9d19e1b9ac64dc6bb095c',1,'spic::Scene']]]
 ];
