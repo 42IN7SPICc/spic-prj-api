@@ -33,6 +33,12 @@ namespace spic {
             virtual void OnUpdate();
 
             /**
+             * @brief Triggers after all Update functions have been called.
+             * @sharedapi
+             */
+            virtual void OnLateUpdate() { }
+
+            /**
              * @brief Sent when another object enters a trigger collider
              *        attached to this object (2D physics only).
              * @spicapi
